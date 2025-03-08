@@ -28,10 +28,11 @@
      Navbar Styles
   ------------------------------------- */
   .navbar {
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
-    padding: 1rem 0;
-    color: #fff;
-    position: relative;
+    align-items: center;
+    padding: 1rem;
   }
   
   .navbar .logo {
@@ -45,7 +46,7 @@
     list-style: none;
     display: flex;
     gap: 1rem;
-    float: right;
+    margin: 0;
   }
   
   .nav-links li a {
@@ -57,6 +58,16 @@
   .nav-links li a:hover {
     text-decoration: underline;
   }
+
+
+  /* Mobile Responsive - stack links vertically */
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-direction: column; 
+      align-items: center;   /* Center the links */
+      gap: 0.5rem;
+    }
+   }
   
   /* -------------------------------------
      Hero Section
