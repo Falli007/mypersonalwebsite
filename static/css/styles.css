@@ -29,6 +29,7 @@
   ------------------------------------- */
   .navbar {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: #333;
     align-items: center;
@@ -42,6 +43,7 @@
     color: #fff;
   }
   
+  /* NAV LINKS ON DESKTOP */
   .nav-links {
     list-style: none;
     display: flex;
@@ -61,20 +63,27 @@
 
 
   /* Mobile Responsive - stack links vertically */
-  @media (max-width: 600px) {
-    .nav-links {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center; /* Center the links */ 
-      gap: 0.5rem;
-      overflow-x: auto;
-    }
-   
-    .nav-links li a {
-      font-size: 0.9rem;
-      padding: 0.2rem
-    }
+     /* MOBILE MEDIA QUERY */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem;        /* Slightly less padding on mobile */
   }
+
+  .nav-links {
+    /* Keep links in a single row, allow horizontal scroll if needed */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.3rem;            /* Reduce gap so they fit better */
+    overflow-x: auto;       /* Adds horizontal scroll if they still don't fit */
+    justify-content: center;
+  }
+
+  /* Slightly smaller font & padding for mobile links */
+  .nav-links li a {
+    font-size: 0.85rem;     
+    padding: 0.2rem;
+  }
+}
   
   /* -------------------------------------
      Hero Section
