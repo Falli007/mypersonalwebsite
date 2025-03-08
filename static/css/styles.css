@@ -1,0 +1,248 @@
+/* -------------------------------------
+   Reset & Base Styles
+------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+  }
+  
+  /* -------------------------------------
+     Container Utility
+  ------------------------------------- */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* -------------------------------------
+     Navbar Styles
+  ------------------------------------- */
+  .navbar {
+    background-color: #333;
+    padding: 1rem 0;
+    color: #fff;
+    position: relative;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    float: right;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* -------------------------------------
+     Hero Section
+  ------------------------------------- */
+  .hero-section {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* -------------------------------------
+     Button Styles
+  ------------------------------------- */
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e74c3c;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-primary {
+    background-color: #3498db;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-secondary {
+    background-color: #2ecc71;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #27ae60;
+  }
+  
+  /* -------------------------------------
+     Projects Section
+  ------------------------------------- */
+  .projects-section {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-card h3 {
+    margin: 1rem;
+  }
+  
+  .project-card p {
+    margin: 0 1rem 1rem 1rem;
+  }
+  
+  /* -------------------------------------
+     About Section
+  ------------------------------------- */
+  .about-section {
+    background-color: #ecf0f1;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    margin-bottom: 2rem;
+  }
+  
+  /* -------------------------------------
+     Footer Styles
+  ------------------------------------- */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  .footer .footer-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer .social-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+  }
+  
+  .footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer .social-links li a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Profile Picture Styling */
+  .profile-picture {  
+    border-radius: 50%;   /* Makes the image circular */
+    width: 200px;      /* Sets the width of the image */
+    height: 200px;     /* Sets the height of the image */
+    margin: 0 auto;   /* Centers the image */
+    display: block;    /* Removes default inline styling */
+    margin-bottom: 1rem;   /* Adds space between the image and the text */
+  }
+
+  /* Skills Ticker Styling */
+  .skills-ticker {
+    background-color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem 0;
+  }
+
+  .ticker-content {
+    display: inline-block;
+    /* Start the ticker off-screen to the right */
+    padding-left: 100%; 
+    /* The marquee animation: 10s to scroll across, linear speed, infinite repeat */
+    animation: ticker-scroll 10s linear infinite;
+  }
+  
+  /* Each skill item styling */
+  .ticker-content span {
+    display: inline-block;
+    margin: 0 2rem;              /* Space between skills */
+    color: #fff;                 /* White text for contrast */
+    font-weight: bold;
+    font-size: 1.2rem;           /* Adjust as desired */
+  }
+  
+  /* Keyframes for the scrolling animation */
+  @keyframes ticker-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Move the content all the way to the left.
+         -100% ensures the entire ticker-content slides out of view. */
+      transform: translateX(-100%);
+    }
+  }

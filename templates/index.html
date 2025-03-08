@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Professional Portfolio showcasing my Data Analysis and Power BI projects" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fredrick Alli - My Power BI and Data Analyst Portfolio</title>
+  <!-- Link to my CSS file in the static folder -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Fredrick Alli</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Banner Section -->
+  <header class="hero-section">
+    <div class="container hero-content">
+      <!--To reference my photo-->
+      <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}" alt="Fredrick Alli" class="profile-picture">  
+      <h1>Hi, I'm Fredrick Alli</h1>
+      <p>
+        A passionate <strong>Data Consultant</strong> with 3 to 4 years experience specialising in <strong>Power BI,</strong> <strong>SQL,</strong> <strong>DBT,</strong> <strong>Python,</strong> <strong>Snowflakes,</strong> <strong>Databricks,</strong>  <strong>Azure,</strong> 
+        <strong>AWS</strong> and data-driven solutions. 
+        Welcome to my portfolio!
+      </p>
+      <a href="/projects" class="btn btn-primary">View Some of My Work</a>
+    </div>
+  </header>
+  
+  <!-- Skills Ticker Section-->
+  <div class="skills-ticker">
+    <div class="ticker-content">
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>dbt</span>
+      <span>Snowflake</span>
+      <span>C#</span>
+      <span>html</span>
+      <span>Excel</span>
+      <span>Azure</span>
+      <span>AWS</span>
+      <span>Data Modelling</span>
+      <span>Machine Learning</span>
+      <span>APIs</span>
+      <span>ETL</span>
+      <span>Databricks</span>
+      <span>Python</span>
+    </div>
+  </div>
+
+  <!-- Featured Projects Section -->
+  <section class="projects-section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p>Take a look at some of my recent Power BI projects.</p>
+
+      <div class="projects-grid">
+        <!-- Project 1: Finance Dahboard -->
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/Finance_Dashboard.jpeg') }}" alt="Finance Dahboard" />
+          <h3>Fintech Dashboard</h3>
+          <p>
+            An interactive Power BI dashboard providing insights into total sales, 
+            country-wise performance, discount bands, and product segments.
+            It helps businesses quickly assess key financial metrics and make data-driven decisions.
+          </p>
+          <!-- Link to your PBIX file on GitHub -->
+          <a 
+            href="https://github.com/Falli007/Power-BI-DashBoard/blob/main/Finance%20Dashboard.pbix" 
+            class="btn" 
+            target="_blank"
+         >
+            View on GitHub
+          </a>
+          </div>
+
+        <!-- Project 2: Human Resources Dashboard -->
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/human_resources_dashboard.jpeg') }}" alt="Project 2" />
+          <h3>Human Resources Dashboard</h3>
+          <p>
+            A dynamic Power BI dashboard focusing on workforce analytics. 
+            Key insights include total employees, average salaries, total sick days, and performance ratings 
+            by business unit or region. This tool helps HR teams make data-driven decisions 
+            for better workforce planning.
+          </p>
+          <a 
+            href="/projects/customer-segmentation" 
+            class="btn" 
+            target="_blank"
+          >
+           View on GitHub
+          </a>
+        </div>
+        
+        <!-- Project 3: Products Analysis Dashboard -->
+        <div class="project-card">
+        <!-- Replace 'products_analysis_dashboard.png' with your actual file name -->
+        <img 
+         src="{{ url_for('static', filename='images/Product_Analysis_Dashboard.jpeg') }}" 
+         alt="Products Analysis Dashboard" 
+        />
+        <h3>Products Analysis Dashboard</h3>
+        <p>
+         An interactive Power BI dashboard focused on product sales performance, 
+         including top products, categories, subcategories, and reseller data. 
+         Gain quick insights into units sold by region and promotion category, 
+         helping teams optimize their inventory and marketing strategies.
+        </p>
+        <a 
+          href="https://github.com/Falli007/Power-BI-DashBoard/blob/main/Products%20Analysis%20Dashboard.pbix" 
+          class="btn" 
+          target="_blank"
+        >
+          View on GitHub
+        </a>
+      </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated data analyst with a passion for turning raw data into meaningful insights.
+        With a strong background in Power BI, SQL, DBT, Excel, Azure, AWS, Snowflakes, html, Python and building ETL pipelines. I have helped several organisations(fintech, construction and Private healthcare) make data-driven
+        decisions that drive growth and efficiency.
+      </p>
+      <a href="/about" class="btn btn-secondary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+    <p>&copy; 2025 Fredrick Alli. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/Falli007" target="_blank">GitHub</a></li>
+        <!-- Add more social links as needed -->
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

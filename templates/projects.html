@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Fredrick Alli</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Fredrick Alli</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container hero-content">
+      <h1>My Projects</h1>
+    </div>
+    <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}" alt="Fredrick Alli" class="profile-picture">  
+  </header>
+
+  <main class="container" style="margin-top: 2rem;">
+    <p>
+      Below are some of the data analysis, machine learning, and Power BI projects I've worked on.
+    </p>
+  </div>
+  </header>
+
+   <!-- Main container for projects -->
+  <main class="container" style="margin-top: 2rem;">
+
+    <!-- 1. Cryptocurrency Prediction -->
+    <section style="margin-bottom: 2rem;">
+      <h2>Cryptocurrency Prediction</h2>
+      <p>
+        Developed a predictive model to forecast cryptocurrency price trends using historical data, 
+        advanced machine learning algorithms, and time-series analysis.
+      </p>
+      <ul>
+        <li><strong>Tech Stack:</strong> Python, Pandas, NumPy, scikit-learn, RaandomForestRegressor, Flask</li>
+        <li><strong>Focus:</strong> Price forecasting, feature engineering, model evaluation</li>
+        <li><strong>Outcome:</strong> Improved forecasting accuracy by applying Random forest Regressor model and 
+            built the application using flask.</li>
+      </ul>
+      <!-- GitHub Link -->
+      <p>
+        <a href="https://github.com/FAlli007/mycurrentcryptomarket/blob/main/stock.ipynb" 
+           target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </p>
+      <!-- To Add a screenshot or placeholder image -->
+      <img src="{{ url_for('static', filename='images/Cryptocurrency_image.jpeg') }}" alt="Cryptocurrency Prediction" width="500">
+      
+    </section>
+
+    <!-- 2. Book Genre Classification -->
+    <section style="margin-bottom: 2rem;">
+      <h2>Book Genre Classification</h2>
+      <p>
+        Built a text classification model to automatically label books by genre based on their 
+        descriptions and metadata, using NLP techniques.
+      </p>
+      <ul>
+        <li><strong>Tech Stack:</strong> Python, scikit-learn, NLP libraries (NLTK/spacy), Pandas, Flask</li>
+        <li><strong>Focus:</strong> Text preprocessing, vectorization (CountVectorizer, TF-IDF), 
+            classification algorithms</li>
+        <li><strong>Outcome:</strong> Achieved high accuracy in predicting genres, demonstrating 
+            the model’s potential for automated categorisation.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/FAlli007/SentimentAnalysis/blob/main/Book_Genre_Classification.ipynb" 
+           target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </p>
+      <!-- To Add a screenshot or placeholder image -->
+      <img src="{{ url_for('static', filename='images/Book_Genre_image.jpeg') }}" alt="Book Genre Classification" width="500">
+      
+    </section>
+
+    <!-- 3. Heart Attack Prediction -->
+    <section style="margin-bottom: 2rem;">
+      <h2>Heart Attack Prediction</h2>
+      <p>
+        Leveraged machine learning algorithms to predict the likelihood of heart attacks based on 
+        clinical and laboratory data, improving early detection and healthcare outcomes.
+      </p>
+      <ul>
+        <li><strong>Tech Stack:</strong> Python (Pandas, NumPy, scikit-learn), Jupyter Notebook, Streamlit</li>
+        <li><strong>Focus:</strong> Classification (Random Forest, Logistic Regression), 
+            model evaluation (ROC, AUC)</li>
+        <li><strong>Outcome:</strong> Provided actionable insights for healthcare professionals 
+            by identifying high-risk patients with significant accuracy.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/FAlli007/Heart-Attack/blob/main/main.py" 
+           target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </p>
+      <!-- To Add a screenshot or placeholder image -->
+      <img src="{{ url_for('static', filename='images/Heart_attack_image.jpeg') }}" alt="Heart Attack Prediction" width="500">
+      
+    </section>
+
+    <!-- 4. Netflix Recommendation System -->
+    <section style="margin-bottom: 2rem;">
+      <h2>Netflix Recommendation System</h2>
+      <p>
+        Created a content-based filtering system to suggest movies and TV shows based on user preferences 
+        and metadata similarity, enhancing the user experience.
+      </p>
+      <ul>
+        <li><strong>Tech Stack:</strong> Python, Pandas, scikit-learn, CountVectorizer</li>
+        <li><strong>Focus:</strong> Cosine similarity, content-based filtering, feature extraction</li>
+        <li><strong>Outcome:</strong> Delivered relevant recommendations by analysing plot overviews, 
+            genres, and user ratings.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/FAlli007/Recommendation_system/blob/main/Netflix.ipynb" 
+           target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </p>
+      <!-- To Add a screenshot or placeholder image -->
+      <img src="{{ url_for('static', filename='images/Netflix_image.jpeg') }}" alt=" Netflix Recommendation System " width="500">
+    </section>
+
+    <!-- 5. Total Call Centre Cases Forecast (SARIMA & Prophet) -->
+    <section style="margin-bottom: 2rem;">
+      <h2>Total Call Centre Cases Forecast</h2>
+      <p>
+        Implemented SARIMA and Prophet models to predict call volumes for a call centre, enabling 
+        resource optimisation and improved staffing.
+      </p>
+      <ul>
+        <li><strong>Tech Stack:</strong> Python, Pandas, NumPy, statsmodels, Prophet, SARIMA</li>
+        <li><strong>Focus:</strong> Time-series forecasting, model selection (SARIMA vs. Prophet), 
+            hyperparameter tuning</li>
+        <li><strong>Outcome:</strong> Increased forecasting accuracy and allowed management to 
+            reduce wait times by better scheduling staff.</li>
+      </ul>
+      <p>
+        <a href="https://github.com/FAlli007/Forecasting-SARIMA-and-Prophet/blob/main/Total%20Call%20Centre%20Forecast%20Using%20SARIMA%20Ending%20of%20Jan-Feb%202024.ipynb" 
+           target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </p>
+      <!-- To Add a screenshot or placeholder image -->
+       <img src="{{ url_for('static', filename='images/call_centre_image.jpeg') }}" alt=" Total Call Centre Cases Forecast" width="500">
+    </section>
+
+    <!-- 6. Credit Card Fraud Detection -->
+    <section style="margin-bottom: 2rem;">
+    <h2>Credit Card Fraud Detection</h2>
+    <p>
+      Developed a classification model to detect fraudulent credit card transactions. 
+      Utilised advanced machine learning techniques and model comparison to accurately 
+      identify suspicious activity and reduce financial losses.
+    </p>
+    <ul>
+      <li><strong>Tech Stack:</strong> Python, scikit-learn, PyCaret, Flask</li>
+      <li><strong>Focus:</strong> Classification metrics, model comparison (e.g., 
+          Ensemble methods, Random Forest, LightGBM), feature engineering</li>
+      <li><strong>Outcome:</strong> Achieved high accuracy in identifying fraudulent 
+          transactions, significantly reducing false positives and enhancing financial security.</li>
+    </ul>
+    <p>
+      <a 
+        href="https://github.com/FAlli007/CreditCardFraudDetection/blob/main/Credit_Card_Fraud_Detection.ipynb" 
+        target="_blank" 
+        class="btn"
+      >
+        View on GitHub
+      </a>
+    </p>
+    <!-- To Add a screenshot or placeholder image -->
+    <img src="{{ url_for('static', filename='images/credit_card.jpeg') }}" alt=" Total Call Centre Cases Forecast" width="500">
+  </section>
+  
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Fredrick Alli. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/Falli007" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
