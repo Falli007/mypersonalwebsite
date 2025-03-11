@@ -32,6 +32,43 @@
     <p>Phone: 07448227514</p>
 
   </main>
+  
+  <section class="contact-section">
+    <div class="container">
+      <h1>How Can We Assist You?</h1>
+      
+      <!-- Contact Info (Email + Social Media) -->
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:allfired18@gmail.com">allifred18@gmail.com</a></p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Falli007"  target="_blank">GitHub</a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+      </div>
+
+  <!-- Contact Form -->
+  <form action="/send_message" method="POST" class="contact-form">
+    <div class="form-row">
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+    </div>
+    <div class="form-row">
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+    </div>
+    <div class="form-row">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+    </div>
+    <button type="submit" class="btn">Send</button>
+  </form>
+</div>
+</section>
 
   <footer class="footer">
     <div class="container footer-content">

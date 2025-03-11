@@ -194,6 +194,101 @@
   .about-section p {
     margin-bottom: 2rem;
   }
+
+
+  /* -------------------------------------
+   CONTACT SECTION 
+   -------------------------------------*/
+.contact-section {
+  background-color: #d4d4c9; /* Example background (light grayish) */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Contact Info (Email + Social) */
+.contact-info {
+  margin-bottom: 2rem;
+}
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.social-media a {
+  margin-right: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: left; /* Labels align to the left */
+}
+
+/* Full-width row for text area */
+.contact-form .form-row:nth-child(4) {
+  grid-column: 1 / span 2;
+}
+
+/* Single column if narrower than 600px */
+@media (max-width: 600px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button */
+.btn {
+  grid-column: 1 / span 2; /* Make the button span two columns */
+  width: 100px;
+  margin: 1rem auto 0 auto;
+  padding: 0.7rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #333;
+}
+
   
   /* -------------------------------------
      Footer Styles
