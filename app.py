@@ -3,6 +3,10 @@ from flask import Flask, render_template, request, redirect, url_for, session
 app = Flask(__name__)
 app.secret_key = "JesusLovesMe1996#"  # Replace with a real secret
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 @app.route('/resume-login', methods=['GET', 'POST'])
 def resume_login():
     if request.method == 'POST':
