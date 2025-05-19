@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+
+
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
       <a href="/" class="logo">Fredrick Alli</a>
@@ -18,7 +21,9 @@
       </ul>
     </div>
   </nav>
+  
 
+  <!-- Hero / Banner Section -->
   <header class="hero-section">
     <div class="container hero-content">
       <h1>My Projects</h1>
@@ -26,16 +31,15 @@
     <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}" alt="Fredrick Alli" class="profile-picture">  
   </header>
 
-  <main class="container" style="margin-top: 2rem;">
+  <!--Projects Section -->
+
+  <section class="projects-section">
+    <div class="container" style="margin-top: 2rem;">
+
     <p>
       Below are some of the data analysis, machine learning, and Power BI projects I've worked on.
     </p>
-  </div>
-  </header>
-
-   <!-- Main container for projects -->
-  <main class="container" style="margin-top: 2rem;">
-
+    
     <!-- 1. Cryptocurrency Prediction -->
     <section style="margin-bottom: 2rem;">
       <h2>Cryptocurrency Prediction</h2>
@@ -184,20 +188,21 @@
     </p>
     <!-- To Add a screenshot or placeholder image -->
     <img src="{{ url_for('static', filename='images/credit_card.jpeg') }}" alt=" Total Call Centre Cases Forecast" width="500">
+  </div>
   </section>
   
-
-  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2025 Fredrick Alli. All Rights Reserved.</p>
+      <p>&copy; 2025 FA Grace Consulting Ltd. All Rights Reserved</p>
       <ul class="social-links">
         <li><a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/Falli007" target="_blank">GitHub</a></li>
       </ul>
     </div>
   </footer>
+
+
 </body>
 </html>

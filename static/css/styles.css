@@ -31,7 +31,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #252526;
     align-items: center;
     padding: 1rem;
   }
@@ -89,10 +89,14 @@
      Hero Section
   ------------------------------------- */
   .hero-section {
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    color: #fff;
-    text-align: center;
-    padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #252526; /* your VS Code grey */
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
   }
   
   .hero-section h1 {
@@ -120,7 +124,7 @@
   }
   
   .btn:hover {
-    background-color: #c0392b;
+    background-color: #2ecc71;
   }
   
   .btn-primary {
@@ -143,8 +147,9 @@
      Projects Section
   ------------------------------------- */
   .projects-section {
-    padding: 3rem 0;
-    text-align: center;
+   background: linear-gradient(135deg, #3498db, #9b59b6);
+   color: #fff;
+   padding: 4rem 0;       /* top/bottom padding only */
   }
   
   .projects-section h2 {
@@ -161,7 +166,8 @@
   .project-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
     overflow: hidden;
   }
   
@@ -182,114 +188,79 @@
      About Section
   ------------------------------------- */
   .about-section {
-    background-color: #ecf0f1;
-    padding: 3rem 0;
-    text-align: center;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    padding: 4rem 0;       /* top/bottom padding only */
   }
   
-  .about-section h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .about-section p {
-    margin-bottom: 2rem;
+   /* card that holds your actual copy */
+ 
+  .about-section .container {
+  background: rgba(255,255,255,0.1); /* optional subtle inner bg */
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #2c3e50;       /* dark text for readability */
   }
 
+  /* headings still white on the gradient if I have any above the card */
+  .about-section h2 {
+  color:  #2c3e50;
+  }
 
   /* -------------------------------------
    CONTACT SECTION 
    -------------------------------------*/
-.contact-section {
-  background-color: #d4d4c9; /* Example background (light grayish) */
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.contact-section .container {
+  /* >>> GRADIENT + CARDS FOR CONTACT >>> */
+  .contact-section {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  padding: 4rem 0;
+  color: #fff;
+  }
+  .contact-section h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  }
+  .contact-section .container {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.contact-section h1 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #333;
-}
-
-/* Contact Info (Email + Social) */
-.contact-info {
-  margin-bottom: 2rem;
-}
-.contact-info p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-.contact-info a {
-  color: #333;
-  text-decoration: none;
-}
-.contact-info a:hover {
-  text-decoration: underline;
-}
-.social-media a {
-  margin-right: 1rem;
-}
-
-/* Contact Form */
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  text-align: left; /* Labels align to the left */
-}
-
-/* Full-width row for text area */
-.contact-form .form-row:nth-child(4) {
-  grid-column: 1 / span 2;
-}
-
-/* Single column if narrower than 600px */
-@media (max-width: 600px) {
-  .contact-form {
-    grid-template-columns: 1fr;
   }
-}
-
-/* Form Rows */
-.form-row {
+/* White “cards” inside the gradient */
+  .contact-card,
+  .contact-form-wrapper {
+  background: #fff;
+  color: #2c3e50;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+ }
+/* Form layout */
+ .form-row {
   display: flex;
   flex-direction: column;
-}
-
-.form-row label {
+  margin-bottom: 1rem;
+ }
+ .form-row label {
+  font-weight: 600;
   margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.form-row input,
-.form-row textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+ }
+ .form-row input,
+ .form-row textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccd0d5;
   border-radius: 4px;
-}
+  transition: border-color 0.2s;
+  }
+  .form-row input:focus,
+  .form-row textarea:focus {
+  border-color: #3498db;
+  }
+/* span email/message/button full width */
+  .form-row.full-width {
+  grid-column: 1 / -1;
+  }
 
-/* Button */
-.btn {
-  grid-column: 1 / span 2; /* Make the button span two columns */
-  width: 100px;
-  margin: 1rem auto 0 auto;
-  padding: 0.7rem 1rem;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: #333;
-}
-
-  
   /* -------------------------------------
      Footer Styles
   ------------------------------------- */
@@ -346,6 +317,13 @@
     padding-left: 100%; 
     /* The marquee animation: 10s to scroll across, linear speed, infinite repeat */
     animation: ticker-scroll 10s linear infinite;
+    /* Ensures the content is always visible */
+    color: #fff;            /* White text for contrast */
+    font-size: 1.2rem;      /* Adjust as desired */
+    font-weight: bold;      /* Makes the text bold */
+    text-align: center;     /* Centers the text */
+    width: 100%;           /* Ensures the ticker takes full width */
+    box-sizing: border-box; /* Ensures padding is included in width */
   }
   
   /* Each skill item styling */
@@ -368,3 +346,170 @@
       transform: translateX(-100%);
     }
   }
+
+/* -------------------------------------
+   Welcome Blurb Styles
+------------------------------------- */
+/* Full-width gradient background */
+.section.welcome {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #fff;
+  padding: 4rem 0;       /* top/bottom padding only */
+}
+
+.section.welcome .container {
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 2rem;         /* inner padding around content */
+  background: rgba(255,255,255,0.1);  /* optional subtle inner bg */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section.welcome h2,
+.section.welcome p {
+  color: #fff;
+}
+
+.section.welcome p {
+  color: #f0f0f0;
+}
+
+
+
+/* -------------------------------------
+   Variables & Base Tuning
+------------------------------------- */
+:root {
+  --brand-blue: #3498db;
+  --brand-purple: #9b59b6;
+  --text-dark: #2c3e50;
+  --text-light: #fff;
+  --bg-light: #f9f9f9;
+  --card-shadow: rgba(0,0,0,0.05);
+}
+
+body {
+  line-height: 1.65;
+  color: var(--text-dark);
+  background-color: #fafafa;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+/* -------------------------------------
+   Section Wrappers
+------------------------------------- */
+.section {
+  padding: 3rem 1rem;
+}
+
+#summary, 
+#story, 
+#contact-cta {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  margin-bottom: 2rem;
+}
+
+#services {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  margin-bottom: 2rem;
+}
+
+/* -------------------------------------
+   Services List (Grid)
+------------------------------------- */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+/* -------------------------------------
+   Clients Grid
+------------------------------------- */
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.client-card {
+  background: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.client-card p {
+  color: #666;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px var(--card-shadow);
+}
+
+/* -------------------------------------
+   Hero Tweaks
+------------------------------------- */
+.hero-section .hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* -------------------------------------
+   Call-to-Action Button
+------------------------------------- */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--brand-blue);
+  color: var(--text-light);
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: #2878b5;
+}
+
+/* -------------------------------------
+   Responsive Adjustments
+------------------------------------- */
+@media (max-width: 768px) {
+  .services-list,
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

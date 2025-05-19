@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Fredrick Alli</title>
   <!-- Link to your CSS file or Bootstrap -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-  <header>
-    <h1>Fredrick Alli</h1>
-    <p>Data Consultant</p>
-  </header>
+
   
   <!-- Navbar (reuse your existing nav) -->
   <nav class="navbar">
@@ -20,74 +18,115 @@
         <li><a href="/">Home</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/resume">Resume</a></li>
+        <li><a href="/resume class="active">Resume</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Resume Header -->
+  <!-- Header/Hero -->
   <header class="hero-section">
     <div class="container hero-content">
       <!--To reference my photo--> 
       <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}" alt="Fredrick Alli" class="profile-picture">  
       <h1>Fredrick Alli</h1>
-      <p>Data Analyst | Power BI | Machine Learning</p>
-      <p>London | 07448227514 | <a href="mailto:allifred18@gmail.com">allifred18@gmail.com</a></p>
+       <p>Data Consultant | ML &amp; Data Engineering | DevOps</p>
+       <p>London, UK &nbsp;|&nbsp;
+          <a href="mailto:allifred18@gmail.com">allifred18@gmail.com</a>
+       </p>
     </div>
   </header>
 
   <main class="container" style="margin-top: 2rem;">
     <!-- Professional Profile -->
     <section>
-      <h2>Professional Profile</h2>
-      <p>
-        A results-driven Data Analyst with a robust technical background in data modelling, 
-        data transformation, predictive analytics, and machine learning. Extensive expertise in 
-        SQL, Python, Power BI, and Azure Databricks to design scalable solutions, streamline 
-        business processes, and deliver actionable insights.
+      <h2>FA Grace Consulting Ltd</h2>
+      <p><strong>Registered Address:</strong><br>
+         167–169 Great Portland Street, London, England, W1W 5PF
       </p>
+      <h3>Professional Summary</h3>
       <p>
-        Proficient in working with large datasets, building data pipelines, automating workflows, 
-        and applying advanced analytics techniques. Experienced in managing complex data environments 
-        and effectively communicating results to both technical and non-technical stakeholders.
+        FA Grace Consulting Ltd is a UK-based technology consultancy specialising in
+        Machine Learning, Data Engineering, Business Intelligence, and DevOps solutions.
+        We design, build, and deploy high-performance systems that power data-driven
+        decision-making, optimise cloud infrastructure, and transform business processes.
+        Our expertise includes predictive analytics, real-time data processing, IoT
+        integration, and scalable cloud architectures.
       </p>
     </section>
+
 
     <!-- Core Skills -->
     <section style="margin-top: 2rem;">
-      <h2>Core Skills</h2>
+      <h2>Key Skills</h2>
       <ul>
-        <li><strong>Data Modelling & Schema Design:</strong> Designing efficient star and snowflake schemas.</li>
-        <li><strong>Advanced SQL & Database Design:</strong> Complex querying, indexing, window functions.</li>
-        <li><strong>Python & Data Engineering:</strong> Pandas, NumPy, PySpark, automated ETL pipelines.</li>
-        <li><strong>Machine Learning & Predictive Analytics:</strong> scikit-learn, TensorFlow, XGBoost.</li>
-        <li><strong>Cloud Platforms & Data Pipelines:</strong> Azure Databricks, Azure Data Factory.</li>
-        <li><strong>Data Visualization & BI:</strong> Power BI, Tableau, Streamlit, DAX, M queries.</li>
+        <li><strong>Cloud Infrastructure:</strong> AWS, Azure Synapse, Key Vault, Azure DevOps, Databricks, Snowflake</li>
+        <li><strong>CI/CD Pipeline Design:</strong> GitLab, Jenkins, Azure DevOps</li>
+        <li><strong>Infrastructure-as-Code (IaC):</strong> Terraform, Docker, Kubernetes, Bicep</li>
+        <li><strong>Data Engineering:</strong> Kafka, MQTT, CouchDB, Redis, Azure Data Lake</li>
+        <li><strong>Machine Learning Models:</strong> XGBoost, CatBoost, Random Forest, SARIMA, Prophet</li>
+        <li><strong>DevOps Automation &amp; Monitoring:</strong> Prometheus, Grafana, Ansible</li>
+        <li><strong>IoT Data Management:</strong> YuDetect, YuStatus, Stratos Integration</li>
+        <li><strong>API Development &amp; Integration:</strong> REST, MQTT, WebSockets</li>
+        <li><strong>Data Modelling:</strong> Star Schema, Snowflake Schema, Dimensional Modelling</li>
+        <li><strong>Data Analysis &amp; Visualization:</strong> Power BI (DAX, Power Query, Dashboards), Excel</li>
       </ul>
     </section>
 
-    <!-- Professional Experience -->
+    <!-- Work Experience -->
     <section style="margin-top: 2rem;">
-      <h2>Professional Experience</h2>
-
-      <div>
-        <h3>Data Connectivity Analyst | Hazeltree – Bournemouth (May 2024 – Nov 2024)</h3>
+      <h2>Work Experience</h2>
+      
+      <div class="job">
+        <h3>FA Grace Consulting Ltd – London, UK <span class="date">Apr 2025 – Present</span></h3>
         <ul>
-          <li>Developed a broker scorecard to monitor and assess data received from various prime brokers, including HSBC, Scotiabank, and JPMorgan, tracking SLA times and delivery patterns. This enabled better client-broker coordination and provided sales teams with valuable insights into client relationships.</li>
-          <li>Collaborated with clients and partner banks (e.g., HSBC, Scotiabank, JPMorgan) to streamline data integration processes, including understanding data delivery formats (e.g., wire transfer ISO formats) and improving overall data transfer mechanisms.</li>
-          <li>Developed comprehensive documentation and reporting frameworks for ETL processes, ensuring seamless communication and transparency across teams.</li>
-          <li>Designed and implemented data quality checks and validation processes to ensure data integrity and accuracy, reducing data discrepancies by 20%.</li>
-          <li>Optimised data pipelines and ETL workflows using Python, SQL, and Azure Data Factory, reducing data processing times by 30%.</li>
-          <li>Created Power BI dashboards to visualise data connectivity metrics, such as data delivery times, data quality scores, and data completeness, enabling stakeholders to make data-driven decisions and identify areas for improvement.</li>
+          <li>Designed and deployed cloud-native applications with Azure Synapse, Databricks, and Snowflake for real-time data processing and analytics.</li>
+          <li>Developed machine learning models for predictive maintenance and financial forecasting using XGBoost, Random Forest, and Prophet.</li>
+          <li>Engineered scalable ETL pipelines with Azure Data Factory, Databricks, and Kafka for high-throughput environments.</li>
+          <li>Implemented Infrastructure-as-Code (IaC) using Terraform, Docker, and Kubernetes for seamless cloud deployments.</li>
+          <li>Architected MQTT and Kafka-based IoT systems for smart-city traffic monitoring and predictive analytics.</li>
+          <li>Built and optimised Power BI dashboards for real-time business insights and decision support.</li>
+          <li>Managed end-to-end DevOps pipelines, including CI/CD, monitoring, and automated scaling.</li>
+          <li>Partnered with Focus Logistics to deliver a construction-site supply-chain management platform and bespoke BI dashboards.</li>
+        </ul>
+      </div>
+      
+      <div class="job">
+        <h3>Focus Logistics (Contracting) – London, UK <span class="date">Dec 2024 – May 2025</span></h3>
+        <ul>
+          <li>Developed interactive Power BI dashboards visualising delivery metrics, route efficiency, and fleet utilisation—enabling real-time KPI monitoring.</li>
+          <li>Engineered ETL pipelines in Azure Data Factory and Databricks, ingesting &amp; transforming 50 M+ daily IoT GPS records with PySpark.</li>
+          <li>Built XGBoost- and Prophet-based predictive models for delivery-time estimation, improving on-time performance by 18%.</li>
+          <li>Developed a real-time logistics optimisation platform using Kafka and Spark Streaming to process telemetry from 1,000+ vehicles.</li>
+          <li>Designed a microservices architecture (Docker &amp; Kubernetes on AKS) exposing RESTful APIs for dynamic route management.</li>
+          <li>Provisioned infrastructure-as-code with Terraform—VM scale sets, AKS clusters, Azure Functions, and Key Vault.</li>
+          <li>Orchestrated CI/CD in Azure DevOps with automated tests, container builds, and blue/green deployments.</li>
+          <li>Implemented anomaly detection on sensor streams using Spark MLlib, flagging delays and equipment faults in real time.</li>
+          <li>Configured Azure Data Lake Gen2 with raw/curated zones and Delta Lake tables for cost-efficient storage.</li>
+          <li>Integrated ERP and TMS systems via REST and SOAP APIs to ensure end-to-end data consistency.</li>
+          <li>Monitored system health with Prometheus &amp; Grafana, setting up alerts and dashboards for pipeline SLA breaches.</li>
         </ul>
       </div>
 
-
-      <div style="margin-top: 1rem;">
-        <h3>Data Analyst | Badger Health Group – Birmingham (Nov 2023 – Apr 2024)</h3>
+      <div class="job">
+        <h3>HazelTree – Bounemouth, UK <span class="date">May 2024 – Nov 2024</span></h3>
         <ul>
-          <li>Implemented a time-series forecasting model using Prophet to predict patient volume, helping the company optimise staffing schedules and reducing costs by 10% annually.</li>
+          <li>Led the development of a predictive churn model using historical transaction and interaction data, improving client retention strategies by 20%.</li>
+          <li>Built a collaborative-filtering recommendation engine to suggest tailored training content to employees, resulting in a 30% increase in completion rates.</li>
+          <li>Designed and implemented a machine learning model to predict external counterparty data delivery times, reducing operational delays by 25%.</li>
+          <li>Developed a broker scorecard monitoring data from prime brokers (HSBC, Scotiabank, JPMorgan), tracking SLA times and delivery patterns to enhance client-broker coordination.</li>
+          <li>Collaborated with clients and partner banks to streamline data integration processes—handling wire-transfer ISO formats and improving overall transfer mechanisms.</li>
+          <li>Integrated over 2.5 million+ records from REST APIs, SOAP services, and SFTP sources into a unified data architecture, cutting manual intervention by 40%.</li>
+          <li>Optimised ETL pipelines using Azure Data Factory and Databricks, boosting data processing speed by 40%.</li>
+          <li>Utilised PySpark for distributed data workloads on large financial datasets, and designed dimensional models to accelerate report generation by 25%.</li>
+          <li>Authored comprehensive ETL documentation and reporting frameworks, ensuring transparency and seamless handover across teams.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Badger Health Group – Southampton, UK <span class="date">Nov 2023 – Apr 2024</span></h3>
+        <ul>
+          <li>Implemented a time-series forecasting model using Prophet, SARIMA, N-Hits to predict patient volume, helping the company optimise staffing schedules and reducing costs by 10% annually.</li>
           <li>Built an automated ML pipeline for sentiment analysis, boosting client satisfaction by 15%.</li>
           <li>Extracting data from multiple data sources such as REST API and SQL database for data analysis.</li>
           <li>Designed and implemented a data governance framework to ensure data quality, compliance, and security, reducing data errors by 25%.</li>
@@ -99,41 +138,33 @@
           <li>Collaborated with data engineers to design and implement data pipelines, data transformations, and data integration processes to support business intelligence and analytics initiatives.</li>
           <li>Create, monitor and benchmark metrics as well as deriving and proposing measures to improve together with the responsible line management</li>
           <li>Enhanced Snowflake data operations by leveraging advanced data engineering techniques and optimised the use of Snowpipe, tasks, stages, and streams to improve data processing speed.</li>
-
         </ul>
       </div>
 
-      <div style="margin-top: 1rem;">
-        <h3>Data Scientist/Analyst | Southampton Solent University (Oct 2022 – Oct 2023)</h3>
+      <div class="job">
+        <h3>Siemens (Contracting) – London, UK <span class="date">Feb 2023 – May 2023</span></h3>
         <ul>
-            <li>Designed and implemented a predictive machine learning model to detect heart attack cases using clinical and laboratory data from the NHS and other reliable databases, achieving a high level of accuracy by applying advanced feature engineering, data balancing techniques (SMOTE), and hyperparameter tuning.</li>
-            <li>Utilised Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn) for data preprocessing, exploratory data analysis (EDA), and model development.</li>
-            <li>Built and deployed a Flask-based web application to provide healthcare stakeholders with a real-time prediction tool, offering instant risk assessment for patients based on laboratory results.</li>
-            <li>Applied cross-validation, Random Forest, Light GBM, and XGBoost classifiers, selecting the most effective model based on precision-recall trade-offs and ROC-AUC scores.</li>
-            <li>Developed an interactive Power BI dashboard to present key insights from the dataset, such as patient demographics, risk factor analysis, and prediction outcomes, facilitating data-driven decisions for healthcare professionals.</li>
-            <li>Employed data imputation and normalization techniques to handle missing and skewed data, improving the overall model performance.</li>
-            <li>Collaborated with cross-disciplinary teams of clinicians and data engineers to align predictive models with clinical guidelines and ensure compliance with healthcare data standards.</li>
-            <li>Delivered comprehensive documentation and stakeholder presentations, explaining the model’s architecture, performance metrics (F1-score, recall, and precision), and its impact on improving early heart attack detection.</li>
+          <li>Collaborated with engineering teams to integrate data-driven solutions into Siemens Teamcenter PLM, ensuring that technical documentation was accurate and aligned with industry regulations.</li>
+          <li>Conducted 3D data validation and reviewed data attributes in Siemens Teamcenter 11, ensuring high-quality documentation for engineering teams.</li>
+          <li>Identified system inefficiencies in Teamcenter, providing data-driven recommendations that streamlined data validation processes, improving project data accuracy by 20%.</li>
+          <li>Supported migration of technical data for the Desiro City Platform using Snowflake.</li>
         </ul>
       </div>
 
-      <div style="margin-top: 1rem;">
-        <h3>Data Analyst | Holistic Care Medical Assistance (Jan 2020 – July 2022)</h3>
+      <div class="job">
+        <h3>Holistic Care Medical Assistance – Remote <span class="date">Jul 2020 – Oct 2023</span></h3>
         <ul>
-            <li>Built a machine learning-based time-series model for predicting patient case loads, leading to a 30% cost saving by optimizing clinician scheduling.</li>
-            <li>Developed a Random Forest Classifier to detect fraudulent claims, reducing manual fraud checks and improving detection accuracy and efficiency.</li>
-            <li>Conducted machine learning model validation to improve accuracy and reduce model drift, ensuring reliable predictions over time.</li>
-            <li>Automated data extraction and transformation processes using Python and SQL, reducing manual data processing time by 40%.</li>
-            <li>Designed and implemented data visualizations in Power BI to track key performance indicators (KPIs) such as patient wait times, clinician productivity, and resource utilization.</li>
-            <li>Collaborated with cross-functional teams to define data requirements, develop data models, and deliver actionable insights to support business decisions.</li>
-            <li>Utilised Excel macros and Power Query to automate weekly and monthly reports on patient care data, significantly reducing manual reporting time and increasing accuracy.</li>
-            <li>Created SQL-based queries to extract and manipulate large datasets from internal databases, streamlining data analysis and supporting business decisions related to staffing and resource allocation.</li>
-            <li>Designed interactive Power BI dashboards to provide real-time insights into key performance metrics such as patient load, staffing efficiency, and clinician productivity, empowering data-driven decision-making across the organisation.</li>
-          </ul>
+          <li>Built scalable ETL pipelines in Databricks and Snowflake, reducing reporting cycle time by 30%.</li>
+          <li>Developed predictive models with Prophet and SARIMA to forecast healthcare trends.</li>
+          <li>Constructed segmentation models to personalise health communications, boosting service uptake.</li>
+          <li>Built and maintained automated dashboards using Dash and Power BI for real-time monitoring.</li>
+          <li>Conducted pricing analysis and simulation modelling, influencing key financial decisions.</li>
+          <li>Ensured code quality through Git, peer reviews, and reproducible Jupyter/RMarkdown workflows.</li>
         </ul>
       </div>
     </section>
 
+  
     <!-- Education -->
     <section style="margin-top: 2rem;">
       <h2>Education</h2>
@@ -180,7 +211,7 @@
   <!-- Footer -->
   <footer class="footer" style="margin-top: 2rem;">
     <div class="container footer-content">
-      <p>&copy; 2025 Fredrick Alli. All Rights Reserved.</p>
+      <p>&copy; 2025 FA Grace Consulting Ltd. All Rights Reserved.</p>
       <ul class="social-links">
         <li><a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/Falli007" target="_blank">GitHub</a></li>

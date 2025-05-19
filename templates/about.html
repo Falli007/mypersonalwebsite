@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Fredrick Alli</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-  <!-- Reusing my  existing navbar -->
+
+
+  <!-- My navbar -->
   <nav class="navbar">
     <div class="container">
       <a href="/" class="logo">Fredrick Alli</a>
@@ -20,47 +23,136 @@
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero-section">
     <div class="container hero-content">
-    <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}" alt="Fredrick Alli" class="profile-picture"> 
-      <h1>About Me</h1>
+      <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}"
+           alt="Portrait of Fredrick Alli"
+           class="profile-picture">
+      <div class="hero-text">
+        <h1>Hi, I’m Fredrick Alli</h1>
+        <p>
+          A results-driven Data Consultant specialising in Machine Learning, Data
+          Engineering, Power BI and DevOps. I help organisations turn raw data into
+          actionable insights and scalable, cloud-native solutions.
+        </p>
+        <a href="/projects" class="btn-primary">View Some of My Work</a>
+      </div>
     </div>
   </header>
 
-  <main class="container" style="margin-top: 2rem;">
-    <h2>Who I Am</h2>
-    <p>
-      I am Fredrick Alli, a passionate Data Consultant specialising in providing data-driven solutions to various companies.
-      With a background in machine learning, data engineering, and BI tools, I help businesses unlock
-      actionable insights and drive better decisions.
-    </p>
+  
+  <!-- Main Content -->-->
 
-    <!-- Add more sections: personal background, hobbies, your story, etc. -->
-    <h2>My Background</h2>
-    <p>
-      I hold a Bachelor's degree in Biomedical Science, MSc Data Science and Artificial Intelligence from the Southampton Solent University and have completed
-      several certifications in data analytics, Power BI and business intelligence. My journey into data analysis
-      began during my university years, where I discovered the power of data in solving real-world problems.
-    </p> 
 
-    <h2>My Hobbies</h2>
-    <p>
-      When I am not crunching numbers or building dashboards, you can find me exploring the great outdoors, playing
-      football, swimming, or experimenting with new recipes in the kitchen. I believe in the importance of work-life balance
-      and enjoy spending time with family and friends.
-    </p>
+  <main class="about-section">
+    <div class="container">
+   
+     <!-- PROFESSIONAL SUMMARY -->
+    <section id="summary" class="section">
+      <h2>Professional Summary</h2>
+      <p>
+        I lead FA Grace Consulting Ltd., a London-based technology consultancy specialising in
+        Machine Learning, Data Engineering, Business Intelligence, and DevOps. Over the past 5+
+        years, I’ve designed &amp; deployed high-performance data platforms, built predictive
+        analytics solutions, and automated CI/CD pipelines for clients in finance, healthcare,
+        and smart-city sectors and construction logisitics sectors.
+      </p>
+    </section>
 
-    <h2>My Story</h2>
-    <p>
-      My passion for data analysis stems from my curiosity to understand the world around me. I am fascinated by the
-      stories that data can tell and the impact it can have on businesses and society. I am committed to continuous
-      learning and growth, always seeking new challenges and opportunities to expand my skill set.
-    </p>
+
+      <!-- MY STORY -->
+    <section id="story" class="section">
+      <h2>My Story</h2>
+      <p>
+        Early on I discovered that data isn’t just numbers—it’s the heartbeat of modern business. I
+        dove deep into ETL pipelines and real-time analytics, then expanded into cloud architectures
+        and CI/CD practices to deliver end-to-end solutions. Today, I love architecting systems that
+        run reliably at scale and uncovering insights that drive real impact.
+      </p>
+      <p>
+        Whether I’m building a Kafka-powered streaming pipeline, training a forecasting model in
+        SARIMA or N-Hits, or automating deployments with Terraform and Kubernetes, my goal is the same:
+        empower teams with robust, maintainable data platforms.
+      </p>
+    </section>
+
+     <!-- CORE SERVICES -->
+    <section id="services" class="section">
+      <h2>Core Services</h2>
+      <ul class="services-list">
+        <li><strong>Cloud &amp; DevOps:</strong> AWS, Azure Synapse, GCP, Terraform, Kubernetes, CI/CD</li>
+        <li><strong>Data Engineering:</strong> Kafka, Databricks, Snowflake, DBT, Pyspark, Azure Data Factory</li>
+        <li><strong>Machine Learning:</strong> XGBoost, Prophet, SARIMA, DeepAR, N-HITS</li>
+        <li><strong>Business Intelligence:</strong> Power BI, Tableau, Dash, DAX, Power Query</li>
+        <li><strong>IoT &amp; APIs:</strong> MQTT, REST/WebSockets, Smart City Integrations</li>
+      </ul>
+    </section> 
+    
+     <!-- KEY CLIENTS -->
+    <section id="clients" class="section">
+      <h2>Clients &amp; Partners</h2>
+      <div class="client-grid">
+        <div class="client-card">
+          <h3>University of Arizona</h3>
+          <p>Data Engineering &amp; Predictive Analytics</p>
+       </div>
+       <div class="client-card">
+          <h3>HazelTree</h3>
+          <p>Financial ETL &amp; PySpark Solutions</p>
+       </div>
+       <div class="client-card">
+          <h3>Holistic Care Medical Assistance</h3>
+          <p>Healthcare Forecasting &amp; BI Dashboards</p>
+       </div>
+       <div class="client-card">
+          <h3>Badger Health Group</h3>
+          <p>Real-Time Power BI &amp; Feature Engineering</p>
+       </div>
+       <div class="client-card">
+          <h3>Siemens (Teamcenter PLM)</h3>
+          <p>Data Migration &amp; Snowflake Integration</p>
+       </div>
+       <div class="client-card">
+          <h3>FA Grace Consulting Ltd</h3>
+          <p>Your End-to-End Data &amp; DevOps Partner</p>
+       </div>
+       <div class="client-card">
+          <h3>Focus Logistics</h3>
+          <p>Construction Site Supply-Chain Management & BI Dashboards</p>
+       </div>
+     </div>
+    </section>
+
+
+    <!-- HOBBIES & INTERESTS -->
+    <section id="hobbies" class="section">
+      <h2>Outside of Work</h2>
+      <p>
+        When I’m not architecting data platforms, you’ll find me:
+      </p>
+      <ul class="hobbies-list">
+        <li>Hiking &amp; exploring the UK countryside</li>
+        <li>Playing football or swimming laps</li>
+        <li>Experimenting with new recipes</li>
+        <li>Reading sci-fi novels with my family</li>
+      </ul>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section id="contact-cta" class="section">
+      <h2>Let’s Talk!</h2>
+      <p>
+        Interested in a data-driven transformation?  
+        <a href="/contact" class="btn-primary">Get in Touch</a>
+      </p>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2025 Fredrick Alli. All Rights Reserved.</p>
+      <p>&copy; 2025 FA Grace Consulting Ltd. All Rights Reserved.</p>
       <ul class="social-links">
         <li><a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/Falli007" target="_blank">GitHub</a></li>
