@@ -77,7 +77,7 @@
   <section class="projects-section">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>A cross-section of recent work: a full-stack booking platform, production forecasting, regulatory risk modelling, and AI agents.</p>
+      <p>A cross-section of recent work: a full-stack booking platform, regulatory risk modelling, and GenAI/RAG systems.</p>
 
       <div class="projects-grid">
         <div class="project-card">
@@ -109,29 +109,29 @@
         </div>
 
         <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/forecasting.svg') }}" alt="Forecasting illustration">
-          <span class="category-tag">Forecasting</span>
-          <h3>Retail Demand Forecasting</h3>
+          <img src="{{ url_for('static', filename='images/projects/pdf-rag-chatbot.png') }}" alt="Multi-PDF RAG Chatbot interface">
+          <span class="category-tag">GenAI / RAG</span>
+          <h3>Multi-PDF RAG Chatbot</h3>
           <p>
-            A production-grade demand forecasting system for Tesco-scale retail: deep learning
-            models (LSTM, TCN, Transformer, N-BEATS, DeepAR), probabilistic forecasting, and
-            hierarchical reconciliation across 50 stores and 200 products.
+            A Retrieval-Augmented Generation chatbot for holding natural language conversations
+            with multiple PDF documents, with the FAISS index refreshing automatically as new
+            documents are added.
           </p>
-          <a href="https://github.com/Falli007/TimeSeriesForecasting" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/genai-pdf-rag-chatbot" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
 
         <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/ai-engineering.svg') }}" alt="AI Engineering illustration">
-          <span class="category-tag">AI Engineering</span>
-          <h3>Building Agents Portfolio</h3>
+          <img src="{{ url_for('static', filename='images/projects/claimtrackr.png') }}" alt="ClaimTrackr insurance claims processing interface">
+          <span class="category-tag">GenAI / RAG</span>
+          <h3>ClaimTrackr</h3>
           <p>
-            Production-oriented multi-agent AI systems across regulated domains: insurance
-            claims triage &amp; SEC filing research, healthcare prior-auth extraction &amp;
-            CDC BRFSS research, and fintech AML alert scoring &amp; CFPB complaint research.
+            An AI-powered insurance claims processing assistant that automates the claims
+            lifecycle: document parsing, embedding-based policy matching, real-time eligibility
+            validation, and an AI chatbot for policy handbook lookup.
           </p>
-          <a href="https://github.com/Falli007/Building-Agents" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/GenAI-Insurance" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
