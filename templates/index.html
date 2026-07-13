@@ -50,6 +50,7 @@
       <span>FastAPI</span>
       <span>PyTorch</span>
       <span>scikit-learn</span>
+      <span>Voice AI (TTS/ASR)</span>
       <span>SQL</span>
       <span>dbt</span>
       <span>Snowflake</span>
@@ -67,6 +68,7 @@
       <span>Machine Learning</span>
       <span>NLP</span>
       <span>Computer Vision</span>
+      <span>Health AI</span>
       <span>Power BI</span>
     </div>
   </div>
@@ -75,10 +77,11 @@
   <section class="projects-section">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>A cross-section of recent work spanning AI agents, retrieval-augmented generation, and production data engineering pipelines.</p>
+      <p>A cross-section of AI work I've built, spanning agents, retrieval-augmented generation, NLP, and health AI.</p>
 
       <div class="projects-grid">
         <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/ai-engineering.svg') }}" alt="AI Engineering illustration">
           <span class="category-tag">AI Engineering</span>
           <h3>Building Agents Portfolio</h3>
           <p>
@@ -92,6 +95,7 @@
         </div>
 
         <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/genai-rag.svg') }}" alt="GenAI RAG illustration">
           <span class="category-tag">GenAI / RAG</span>
           <h3>WHO RAG Service</h3>
           <p>
@@ -105,7 +109,8 @@
         </div>
 
         <div class="project-card">
-          <span class="category-tag">Data Science / NLP</span>
+          <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
+          <span class="category-tag">NLP</span>
           <h3>Clinical NLP Pipeline</h3>
           <p>
             A production-grade clinical NLP pipeline covering classification, NER, RAG, and
@@ -118,14 +123,14 @@
         </div>
 
         <div class="project-card">
-          <span class="category-tag">Data Engineering</span>
-          <h3>Insurance Data Engineering Pipeline</h3>
+          <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
+          <span class="category-tag">Health AI</span>
+          <h3>Chest X-ray Disease Classification</h3>
           <p>
-            A medallion-architecture data pipeline for insurance data: bronze ingestion,
-            silver dimensional modelling, and gold-layer business metrics (claims trends,
-            policy profitability, customer lifetime value).
+            A ResNet18 deep learning model that detects five common thoracic diseases from
+            chest X-rays, with Grad-CAM visualisations and an interactive Streamlit app.
           </p>
-          <a href="https://github.com/Falli007/Insurance-Data-Engineer-RestAPI-Prpject" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/CHEST_APP" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
@@ -140,7 +145,7 @@
       <p>
         An AI Engineer, Data Scientist &amp; Data Engineer with a strong background in GenAI/RAG
         systems, LLM agents, machine learning, and cloud data platforms (Azure, AWS, Snowflake,
-        Databricks, Microsoft Fabric) &mdash; helping organisations in finance, healthcare, and
+        Databricks, Microsoft Fabric), helping organisations in finance, healthcare, and
         logistics turn data into decisions.
       </p>
       <a href="/about" class="btn btn-secondary">Learn More</a>

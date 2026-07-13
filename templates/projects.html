@@ -25,7 +25,7 @@
   <header class="hero-section">
     <div class="container hero-content">
       <h1>My Projects</h1>
-      <p>AI/GenAI, data science, and data engineering projects I've worked on.</p>
+      <p>AI projects I've built: agents, GenAI/RAG, NLP, and health AI.</p>
     </div>
   </header>
 
@@ -35,6 +35,7 @@
 
       <!-- 1. Building Agents -->
       <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/ai-engineering.svg') }}" alt="AI Engineering illustration">
         <span class="category-tag">AI Engineering</span>
         <h2>Building Agents Portfolio</h2>
         <p>
@@ -52,6 +53,7 @@
 
       <!-- 2. WHO RAG Service -->
       <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/genai-rag.svg') }}" alt="GenAI RAG illustration">
         <span class="category-tag">GenAI / RAG</span>
         <h2>WHO RAG Service</h2>
         <p>
@@ -69,6 +71,7 @@
 
       <!-- 3. OncoBot -->
       <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/genai-rag.svg') }}" alt="GenAI RAG illustration">
         <span class="category-tag">GenAI / RAG</span>
         <h2>OncoBot: Lung-Cancer RAG Assistant</h2>
         <p>
@@ -85,7 +88,8 @@
 
       <!-- 4. Clinical NLP Pipeline -->
       <article class="project-detail">
-        <span class="category-tag">Data Science / NLP</span>
+        <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
+        <span class="category-tag">NLP</span>
         <h2>Clinical NLP Pipeline</h2>
         <p>
           A production-grade clinical NLP pipeline covering classification, NER, RAG, and
@@ -100,9 +104,28 @@
         <a href="https://github.com/Falli007/-clinical-nlp-pipeline" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 5. Brain Tumor MRI Classifier -->
+      <!-- 5. BBC News NLP Platform -->
       <article class="project-detail">
-        <span class="category-tag">Computer Vision</span>
+        <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
+        <span class="category-tag">NLP</span>
+        <h2>BBC News NLP Intelligence Platform</h2>
+        <p>
+          A local-only NLP platform for the BBC News archive: dataset auditing, a
+          fine-tuned ModernBERT classifier, entity recognition, sub-topic classification,
+          semantic search, a FastAPI backend, and a Django UI.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, ModernBERT, GLiNER, FastAPI, Django</li>
+          <li><strong>Focus:</strong> Dataset validation, text classification fine-tuning, NER, and semantic search, all running locally</li>
+          <li><strong>Outcome:</strong> Delivered a full-stack NLP platform with no hosted inference or API key dependency.</li>
+        </ul>
+        <a href="https://github.com/Falli007/BBC-Subclassification-NLP" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 6. Brain Tumor MRI Classifier -->
+      <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
+        <span class="category-tag">Health AI</span>
         <h2>Brain Tumor MRI Classifier</h2>
         <p>
           A 4-class brain tumor MRI classifier (glioma, meningioma, pituitary, no tumor)
@@ -116,55 +139,39 @@
         <a href="https://github.com/Falli007/brain-mri-tumor-detection" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 6. BBC News NLP Platform -->
+      <!-- 7. Chest X-ray Disease Classification -->
       <article class="project-detail">
-        <span class="category-tag">Data Science / NLP</span>
-        <h2>BBC News NLP Intelligence Platform</h2>
+        <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
+        <span class="category-tag">Health AI</span>
+        <h2>Chest X-ray Disease Classification</h2>
         <p>
-          A local-only NLP platform for the BBC News archive: dataset auditing, a
-          fine-tuned ModernBERT classifier, entity recognition, sub-topic classification,
-          semantic search, a FastAPI backend, and a Django UI.
+          A fine-tuned ResNet18 model that detects five common thoracic diseases (atelectasis,
+          cardiomegaly, consolidation, edema, pleural effusion) from chest X-rays, with Grad-CAM
+          visualisations highlighting the regions driving each prediction.
         </p>
         <ul>
-          <li><strong>Tech Stack:</strong> Python, ModernBERT, GLiNER, FastAPI, Django</li>
-          <li><strong>Focus:</strong> Dataset validation, text classification fine-tuning, NER, and semantic search &mdash; all running locally</li>
-          <li><strong>Outcome:</strong> Delivered a full-stack NLP platform with no hosted inference or API key dependency.</li>
+          <li><strong>Tech Stack:</strong> Python, PyTorch, ResNet18, Grad-CAM, Streamlit</li>
+          <li><strong>Focus:</strong> Multi-label classification on the CheXpert dataset, model interpretability, interactive inference</li>
+          <li><strong>Outcome:</strong> Trained a deployable disease-detection model with per-class AUROC evaluation and a live inference app.</li>
         </ul>
-        <a href="https://github.com/Falli007/BBC-Subclassification-NLP" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Falli007/CHEST_APP" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 7. Insurance Data Engineering -->
+      <!-- 8. Heart Attack Prediction -->
       <article class="project-detail">
-        <span class="category-tag">Data Engineering</span>
-        <h2>Insurance Data Engineering Pipeline</h2>
+        <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
+        <span class="category-tag">Health AI</span>
+        <h2>Heart Attack Prediction</h2>
         <p>
-          A medallion-architecture data pipeline for insurance data: bronze ingestion,
-          silver dimensional modelling (dim/fact tables), and gold-layer business metrics
-          (claims trends, policy profitability, customer lifetime value).
+          Machine learning models predicting the likelihood of heart attacks from clinical and
+          laboratory data, helping flag high-risk patients for early intervention.
         </p>
         <ul>
-          <li><strong>Tech Stack:</strong> Python, REST API, Dimensional Modelling</li>
-          <li><strong>Focus:</strong> Bronze/silver/gold layering, dimensional modelling, and business-metric aggregation</li>
-          <li><strong>Outcome:</strong> Produced ready-to-consume gold tables for claims trends, regional performance, and profitability analysis.</li>
+          <li><strong>Tech Stack:</strong> Python, Pandas, scikit-learn, Jupyter, Streamlit</li>
+          <li><strong>Focus:</strong> Classification (Random Forest, Logistic Regression), ROC/AUC evaluation</li>
+          <li><strong>Outcome:</strong> Identified high-risk patients with significant accuracy, supporting early detection.</li>
         </ul>
-        <a href="https://github.com/Falli007/Insurance-Data-Engineer-RestAPI-Prpject" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 8. E-Commerce Lakehouse on Microsoft Fabric -->
-      <article class="project-detail">
-        <span class="category-tag">Data Engineering</span>
-        <h2>E-Commerce Lakehouse on Microsoft Fabric</h2>
-        <p>
-          An e-commerce lakehouse pipeline built on Microsoft Fabric OneLake: bronze
-          ingestion from Parquet into Delta tables, followed by silver-layer cleansing and
-          typing with Spark SQL.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> PySpark, Microsoft Fabric, Delta Lake, Spark SQL</li>
-          <li><strong>Focus:</strong> Bronze-to-silver transformation for orders, customers, products, and order items</li>
-          <li><strong>Outcome:</strong> Built a working medallion pipeline on Fabric OneLake using PySpark and Delta Lake.</li>
-        </ul>
-        <a href="https://github.com/Falli007/ecommerce-using-microsoft-fabric" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Falli007/Heart-Attack" target="_blank" class="btn">View on GitHub</a>
       </article>
 
     </div>
