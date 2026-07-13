@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: mypersonalwebsite
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        sync: false
+      - key: RESUME_PASSWORD
+        sync: false
