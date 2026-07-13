@@ -258,6 +258,11 @@ a {
   padding: 1.25rem;
 }
 
+.category-tag {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
 .card-body h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;

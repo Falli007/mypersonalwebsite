@@ -7,7 +7,7 @@ export default function Projects() {
         <div className="container">
           <p className="hero-eyebrow">$ ls ./projects</p>
           <h1>My Projects</h1>
-          <p>Data analysis, machine learning, and Power BI projects I've worked on.</p>
+          <p>AI/GenAI, data science, and data engineering projects I've worked on.</p>
         </div>
       </header>
 
@@ -15,6 +15,7 @@ export default function Projects() {
         <div className="container">
           {projects.map((project) => (
             <article className="project-detail" key={project.slug}>
+              <span className="tag category-tag">{project.category}</span>
               <h2>{project.title}</h2>
               <p>{project.summary}</p>
               <ul>
@@ -31,7 +32,6 @@ export default function Projects() {
               <a href={project.githubUrl} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                 View on GitHub
               </a>
-              <img src={project.image} alt={project.title} />
             </article>
           ))}
         </div>

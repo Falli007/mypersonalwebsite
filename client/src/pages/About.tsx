@@ -9,9 +9,9 @@ export default function About() {
           <img src="/images/Fredrick_Alli_photo.jpeg" alt="Fredrick Alli" className="profile-picture" />
           <h1>Hi, I'm Fredrick Alli</h1>
           <p>
-            A results-driven Data Consultant specialising in Machine Learning, Data Engineering,
-            Power BI and DevOps. I help organisations turn raw data into actionable insights and
-            scalable, cloud-native solutions.
+            An AI Engineer, Data Scientist &amp; Data Engineer specialising in GenAI/RAG systems,
+            LLM agents, machine learning, and cloud-native data engineering. I help organisations
+            turn raw data and language models into production-ready, actionable systems.
           </p>
           <Link to="/projects" className="btn btn-primary">
             View Some of My Work
@@ -25,10 +25,10 @@ export default function About() {
             <h2>Professional Summary</h2>
             <p>
               I lead FA Grace Consulting Ltd., a London-based technology consultancy specialising
-              in Machine Learning, Data Engineering, Business Intelligence, and DevOps. Over the
-              past 5+ years, I've designed &amp; deployed high-performance data platforms, built
-              predictive analytics solutions, and automated CI/CD pipelines for clients in
-              finance, healthcare, smart-city, and construction logistics sectors.
+              in AI Engineering, Data Science, and Data Engineering. Over the past 5+ years, I've
+              designed &amp; deployed high-performance data platforms, built GenAI/RAG systems and
+              predictive ML models, and automated CI/CD pipelines for clients in finance,
+              healthcare, smart-city, and construction logistics sectors.
             </p>
           </div>
 

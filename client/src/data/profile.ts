@@ -1,16 +1,17 @@
 export const skills = [
-  'SQL', 'Power BI', 'dbt', 'Snowflake', 'Python', 'PySpark', 'Docker', 'Kubernetes',
-  'Git', 'CI/CD', 'Azure', 'AWS', 'GCP', 'Terraform', 'Apache Airflow', 'Databricks',
-  'Kafka', 'ETL', 'Data Warehousing', 'Data Engineering', 'Data Visualization',
-  'Machine Learning', 'Deep Learning', 'APIs', 'React', 'TypeScript', 'Node.js',
+  'Python', 'LLM Agents', 'RAG', 'LangChain', 'FAISS', 'Hugging Face', 'FastAPI',
+  'PyTorch', 'scikit-learn', 'SQL', 'dbt', 'Snowflake', 'PySpark', 'Databricks',
+  'Microsoft Fabric', 'Docker', 'Kubernetes', 'Git', 'CI/CD', 'Azure', 'AWS', 'GCP',
+  'Terraform', 'Apache Airflow', 'ETL', 'Machine Learning', 'Deep Learning', 'NLP',
+  'Computer Vision', 'Power BI', 'React', 'TypeScript', 'Node.js',
 ];
 
 export const coreServices = [
+  { label: 'AI Engineering', detail: 'LLM agents, RAG pipelines, LangChain, FAISS/Pinecone, FastAPI' },
+  { label: 'Data Science', detail: 'NLP (BERT/BioBERT), computer vision, forecasting, XGBoost, Prophet' },
+  { label: 'Data Engineering', detail: 'Databricks, Microsoft Fabric, Snowflake, dbt, PySpark, Azure Data Factory' },
   { label: 'Cloud & DevOps', detail: 'AWS, Azure Synapse, GCP, Terraform, Kubernetes, CI/CD' },
-  { label: 'Data Engineering', detail: 'Kafka, Databricks, Snowflake, DBT, PySpark, Azure Data Factory' },
-  { label: 'Machine Learning', detail: 'XGBoost, Prophet, SARIMA, DeepAR, N-HiTS' },
   { label: 'Business Intelligence', detail: 'Power BI, Tableau, Dash, DAX, Power Query' },
-  { label: 'IoT & APIs', detail: 'MQTT, REST/WebSockets, Smart City Integrations' },
 ];
 
 export const clients = [

@@ -12,25 +12,27 @@ export interface SkillGroup {
 
 export const resumeData = {
   name: 'Fredrick Alli',
-  title: 'Data Consultant | ML & Data Engineering | DevOps',
+  title: 'AI Engineer | Data Scientist | Data Engineer',
   location: 'London, UK',
   email: 'allifred18@gmail.com',
   company: {
     name: 'FA Grace Consulting Ltd',
     address: '167–169 Great Portland Street, London, England, W1W 5PF',
     summary:
-      'FA Grace Consulting Ltd is a UK-based technology consultancy specialising in Machine Learning, ' +
-      'Data Engineering, Business Intelligence, and DevOps solutions. We design, build, and deploy ' +
-      'high-performance systems that power data-driven decision-making, optimise cloud infrastructure, ' +
-      'and transform business processes. Our expertise includes predictive analytics, real-time data ' +
-      'processing, IoT integration, and scalable cloud architectures.',
+      'FA Grace Consulting Ltd is a UK-based technology consultancy specialising in AI Engineering, ' +
+      'Data Science, Data Engineering, and DevOps solutions. We design, build, and deploy GenAI/RAG ' +
+      'systems, predictive ML models, and high-performance data platforms that power data-driven ' +
+      'decision-making, optimise cloud infrastructure, and transform business processes. Our expertise ' +
+      'includes LLM agents, predictive analytics, real-time data processing, and scalable cloud ' +
+      'architectures.',
   },
   skills: [
-    { category: 'Cloud Infrastructure', items: 'AWS, Azure Synapse, Key Vault, Azure DevOps, Databricks, Snowflake' },
+    { category: 'AI Engineering & GenAI', items: 'LLM Agents, RAG, LangChain, FAISS, Pinecone, Hugging Face, FastAPI' },
+    { category: 'Machine Learning & NLP', items: 'XGBoost, CatBoost, Random Forest, SARIMA, Prophet, BERT/BioBERT, Computer Vision' },
+    { category: 'Cloud Infrastructure', items: 'AWS, Azure Synapse, Key Vault, Azure DevOps, Databricks, Microsoft Fabric, Snowflake' },
     { category: 'CI/CD Pipeline Design', items: 'GitLab, Jenkins, Azure DevOps' },
     { category: 'Infrastructure-as-Code (IaC)', items: 'Terraform, Docker, Kubernetes, Bicep' },
     { category: 'Data Engineering', items: 'Kafka, MQTT, CouchDB, Redis, Azure Data Lake' },
-    { category: 'Machine Learning Models', items: 'XGBoost, CatBoost, Random Forest, SARIMA, Prophet' },
     { category: 'DevOps Automation & Monitoring', items: 'Prometheus, Grafana, Ansible' },
     { category: 'IoT Data Management', items: 'YuDetect, YuStatus, Stratos Integration' },
     { category: 'API Development & Integration', items: 'REST, MQTT, WebSockets' },

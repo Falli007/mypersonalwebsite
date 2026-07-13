@@ -1,16 +1,18 @@
 interface ProjectCardProps {
   title: string;
+  category?: string;
   summary: string;
-  image: string;
+  image?: string;
   githubUrl: string;
   techStack?: string[];
 }
 
-export default function ProjectCard({ title, summary, image, githubUrl, techStack }: ProjectCardProps) {
+export default function ProjectCard({ title, category, summary, image, githubUrl, techStack }: ProjectCardProps) {
   return (
     <div className="card">
-      <img src={image} alt={title} loading="lazy" />
+      {image && <img src={image} alt={title} loading="lazy" />}
       <div className="card-body">
+        {category && <span className="tag category-tag">{category}</span>}
         <h3>{title}</h3>
         <p>{summary}</p>
         {techStack && (
