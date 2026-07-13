@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Fredrick Alli</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Fredrick Alli</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact" class="active">Contact</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="container hero-content">
+      <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}"
+           alt="Portrait of Fredrick Alli"
+           class="profile-picture">
+      <div class="hero-text">
+        <h1>Contact Me</h1>
+        <p>
+          I’m here to help you with your data needs. Whether you have a question,
+          need assistance, or want to discuss a project, feel free to reach out!
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTACT SECTION -->
+  <main>
+   
+     <!-- FULL-WIDTH GRADIENT CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+
+      <!-- White card: contact details -->
+      <div class="contact-card">
+        <h2>How Can I Assist You?</h2>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:analyst.fred20@gmail.com">analyst.fred20@gmail.com</a>
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Falli007" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- White card: message form -->
+      <div class="contact-form-wrapper">
+        <h2>Send a Message</h2>
+        <form action="/send_message" method="POST" class="contact-form">
+          <div class="form-row">
+            <label for="first_name">First Name</label>
+            <input id="first_name" name="first_name" type="text" placeholder="Your first name" required>
+          </div>
+          <div class="form-row">
+            <label for="last_name">Last Name</label>
+            <input id="last_name" name="last_name" type="text" placeholder="Your last name" required>
+          </div>
+          <div class="form-row full-width">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row full-width">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="What can I help you with?" required></textarea>
+          </div>
+          <div class="form-row full-width">
+            <button type="submit" class="btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+    
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 FA Grace Consulting Ltd. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li>
+          <a href="https://linkedin.com/in/fredrick-alli-ab8192206"
+             target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/Falli007"
+             target="_blank" rel="noopener">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
