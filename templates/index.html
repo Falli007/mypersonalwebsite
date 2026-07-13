@@ -77,9 +77,51 @@
   <section class="projects-section">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>A cross-section of AI work I've built, spanning agents, retrieval-augmented generation, NLP, and health AI.</p>
+      <p>A cross-section of recent work: a full-stack booking platform, production forecasting, regulatory risk modelling, and AI agents.</p>
 
       <div class="projects-grid">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/cuisine-table.png') }}" alt="Cuisine Table restaurant booking platform home page">
+          <span class="category-tag">Full-Stack App</span>
+          <h3>Cuisine Table</h3>
+          <p>
+            A full-stack restaurant booking marketplace: customers browse restaurants across
+            four cuisines, reserve tables, and pre-order menu items, while a platform admin
+            manages every restaurant's profile, menu, and bookings from a dedicated dashboard.
+          </p>
+          <a href="https://github.com/Falli007/restaurantbookingapps" class="btn" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/risk-modelling.png') }}" alt="Risk and Advanced Modelling pharmacovigilance dashboard">
+          <span class="category-tag">Risk Analytics</span>
+          <h3>Risk &amp; Advanced Modelling</h3>
+          <p>
+            Four risk-analytics modules pulling real, live regulatory data (openFDA,
+            ClinicalTrials.gov, US Treasury OFAC), built on a shared ML risk-scoring framework
+            and surfaced through an interactive Streamlit dashboard.
+          </p>
+          <a href="https://github.com/Falli007/Risk-Advanced-Modelling" class="btn" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/forecasting.svg') }}" alt="Forecasting illustration">
+          <span class="category-tag">Forecasting</span>
+          <h3>Retail Demand Forecasting</h3>
+          <p>
+            A production-grade demand forecasting system for Tesco-scale retail: deep learning
+            models (LSTM, TCN, Transformer, N-BEATS, DeepAR), probabilistic forecasting, and
+            hierarchical reconciliation across 50 stores and 200 products.
+          </p>
+          <a href="https://github.com/Falli007/TimeSeriesForecasting" class="btn" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
         <div class="project-card">
           <img src="{{ url_for('static', filename='images/projects/ai-engineering.svg') }}" alt="AI Engineering illustration">
           <span class="category-tag">AI Engineering</span>
@@ -90,47 +132,6 @@
             CDC BRFSS research, and fintech AML alert scoring &amp; CFPB complaint research.
           </p>
           <a href="https://github.com/Falli007/Building-Agents" class="btn" target="_blank" rel="noopener">
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/genai-rag.svg') }}" alt="GenAI RAG illustration">
-          <span class="category-tag">GenAI / RAG</span>
-          <h3>WHO RAG Service</h3>
-          <p>
-            A microservice for querying WHO guideline documents using Retrieval-Augmented
-            Generation: PDF ingestion, SBERT embeddings, vector indexing, and semantic
-            summarisation via an HTTP API.
-          </p>
-          <a href="https://github.com/Falli007/WHO-RAG-Recommendation" class="btn" target="_blank" rel="noopener">
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
-          <span class="category-tag">NLP</span>
-          <h3>Clinical NLP Pipeline</h3>
-          <p>
-            A production-grade clinical NLP pipeline covering classification, NER, RAG, and
-            evaluation across 614K+ samples, running entirely on local HuggingFace models for
-            regulated healthcare environments.
-          </p>
-          <a href="https://github.com/Falli007/-clinical-nlp-pipeline" class="btn" target="_blank" rel="noopener">
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
-          <span class="category-tag">Health AI</span>
-          <h3>Chest X-ray Disease Classification</h3>
-          <p>
-            A ResNet18 deep learning model that detects five common thoracic diseases from
-            chest X-rays, with Grad-CAM visualisations and an interactive Streamlit app.
-          </p>
-          <a href="https://github.com/Falli007/CHEST_APP" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>

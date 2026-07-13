@@ -25,7 +25,7 @@
   <header class="hero-section">
     <div class="container hero-content">
       <h1>My Projects</h1>
-      <p>AI projects I've built: agents, GenAI/RAG, NLP, and health AI.</p>
+      <p>Full-stack apps, risk analytics, forecasting, and AI/ML projects I've built.</p>
     </div>
   </header>
 
@@ -33,7 +33,84 @@
   <section class="projects-section">
     <div class="container">
 
-      <!-- 1. Building Agents -->
+      <!-- 1. Cuisine Table -->
+      <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/cuisine-table.png') }}" alt="Cuisine Table restaurant booking platform home page">
+        <span class="category-tag">Full-Stack App</span>
+        <h2>Cuisine Table</h2>
+        <p>
+          A full-stack restaurant booking marketplace built for a client who wanted to bring
+          several partner restaurants onto a single reservation platform: customers browse
+          restaurants across four cuisines, reserve a table, pre-order menu items, and pay a
+          deposit online. A single platform admin manages every restaurant's profile, menu,
+          tables, and bookings from a dedicated dashboard.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> TypeScript, React, Node.js</li>
+          <li><strong>Focus:</strong> Multi-tenant booking flow, menu pre-ordering, deposit payments, and an admin dashboard</li>
+          <li><strong>Outcome:</strong> A working marketplace covering the full customer booking journey and platform-admin management.</li>
+        </ul>
+        <a href="https://github.com/Falli007/restaurantbookingapps" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 2. Risk & Advanced Modelling -->
+      <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/risk-modelling.png') }}" alt="Risk and Advanced Modelling pharmacovigilance dashboard">
+        <span class="category-tag">Risk Analytics</span>
+        <h2>Risk &amp; Advanced Modelling</h2>
+        <p>
+          Four independent risk-analytics modules for a regulated setting, each pulling real,
+          live, public regulatory data (openFDA, ClinicalTrials.gov, US Treasury OFAC), built on
+          a shared risk-scoring/ML framework, and surfaced through an interactive dashboard with
+          stakeholder-facing reports.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, Streamlit, scikit-learn, RandomForest, Logistic Regression</li>
+          <li><strong>Focus:</strong> Pharmacovigilance signal detection, recall risk, clinical trial risk, and sanctions screening</li>
+          <li><strong>Outcome:</strong> Four end-to-end notebooks run against live data, with a shared risk-scoring engine and a stakeholder dashboard.</li>
+        </ul>
+        <a href="https://github.com/Falli007/Risk-Advanced-Modelling" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 3. Retail Demand Forecasting -->
+      <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/forecasting.svg') }}" alt="Forecasting illustration">
+        <span class="category-tag">Forecasting</span>
+        <h2>Retail Demand Forecasting</h2>
+        <p>
+          A production-grade demand forecasting system built for Tesco-scale retail operations,
+          demonstrating deep learning forecasting models, robust backtesting pipelines,
+          probabilistic forecasting, and hierarchical reconciliation across 50 stores, 200
+          products, and 3 years of daily sales data.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, PyTorch, PySpark, Django, Docker</li>
+          <li><strong>Focus:</strong> LSTM/GRU, TCN, Transformer (TFT-inspired), N-BEATS, and DeepAR forecasting models, plus MinTrace reconciliation</li>
+          <li><strong>Outcome:</strong> A backtested, production-style forecasting pipeline with an interactive Django dashboard.</li>
+        </ul>
+        <a href="https://github.com/Falli007/TimeSeriesForecasting" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 4. Fintech NLP Pipeline -->
+      <article class="project-detail">
+        <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
+        <span class="category-tag">NLP</span>
+        <h2>Fintech NLP Pipeline</h2>
+        <p>
+          A comprehensive NLP pipeline for the financial domain, covering binary sentiment
+          classification, multi-class topic classification, named entity recognition,
+          sub-classification, and retrieval-augmented generation, all tailored to fintech text
+          data.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, HuggingFace Transformers</li>
+          <li><strong>Focus:</strong> Sentiment and topic classification, NER, and RAG over financial text</li>
+          <li><strong>Outcome:</strong> A single pipeline spanning 5 distinct NLP tasks tailored specifically to fintech data.</li>
+        </ul>
+        <a href="https://github.com/Falli007/fintech-nlp-pipeline-" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 5. Building Agents -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/ai-engineering.svg') }}" alt="AI Engineering illustration">
         <span class="category-tag">AI Engineering</span>
@@ -51,7 +128,7 @@
         <a href="https://github.com/Falli007/Building-Agents" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 2. WHO RAG Service -->
+      <!-- 6. WHO RAG Service -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/genai-rag.svg') }}" alt="GenAI RAG illustration">
         <span class="category-tag">GenAI / RAG</span>
@@ -69,24 +146,7 @@
         <a href="https://github.com/Falli007/WHO-RAG-Recommendation" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 3. OncoBot -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/genai-rag.svg') }}" alt="GenAI RAG illustration">
-        <span class="category-tag">GenAI / RAG</span>
-        <h2>OncoBot: Lung-Cancer RAG Assistant</h2>
-        <p>
-          A Retrieval-Augmented-Generation assistant that answers questions about early
-          lung-cancer detection using published research papers.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, FAISS, Sentence-Transformers, Flan-T5, FastAPI, Streamlit</li>
-          <li><strong>Focus:</strong> Nearest-neighbour document retrieval, embedding-based search, and prompt-driven answer generation</li>
-          <li><strong>Outcome:</strong> Delivered a working API and lightweight web UI for querying lung-cancer research literature.</li>
-        </ul>
-        <a href="https://github.com/Falli007/Oncobot" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 4. Clinical NLP Pipeline -->
+      <!-- 7. Clinical NLP Pipeline -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
         <span class="category-tag">NLP</span>
@@ -104,25 +164,7 @@
         <a href="https://github.com/Falli007/-clinical-nlp-pipeline" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 5. BBC News NLP Platform -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/nlp.svg') }}" alt="NLP illustration">
-        <span class="category-tag">NLP</span>
-        <h2>BBC News NLP Intelligence Platform</h2>
-        <p>
-          A local-only NLP platform for the BBC News archive: dataset auditing, a
-          fine-tuned ModernBERT classifier, entity recognition, sub-topic classification,
-          semantic search, a FastAPI backend, and a Django UI.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, ModernBERT, GLiNER, FastAPI, Django</li>
-          <li><strong>Focus:</strong> Dataset validation, text classification fine-tuning, NER, and semantic search, all running locally</li>
-          <li><strong>Outcome:</strong> Delivered a full-stack NLP platform with no hosted inference or API key dependency.</li>
-        </ul>
-        <a href="https://github.com/Falli007/BBC-Subclassification-NLP" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 6. Brain Tumor MRI Classifier -->
+      <!-- 8. Brain Tumor MRI Classifier -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
         <span class="category-tag">Health AI</span>
@@ -137,41 +179,6 @@
           <li><strong>Outcome:</strong> Achieved ~97.8% held-out test accuracy, shipped with both a CLI and a Streamlit inference app.</li>
         </ul>
         <a href="https://github.com/Falli007/brain-mri-tumor-detection" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 7. Chest X-ray Disease Classification -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
-        <span class="category-tag">Health AI</span>
-        <h2>Chest X-ray Disease Classification</h2>
-        <p>
-          A fine-tuned ResNet18 model that detects five common thoracic diseases (atelectasis,
-          cardiomegaly, consolidation, edema, pleural effusion) from chest X-rays, with Grad-CAM
-          visualisations highlighting the regions driving each prediction.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, PyTorch, ResNet18, Grad-CAM, Streamlit</li>
-          <li><strong>Focus:</strong> Multi-label classification on the CheXpert dataset, model interpretability, interactive inference</li>
-          <li><strong>Outcome:</strong> Trained a deployable disease-detection model with per-class AUROC evaluation and a live inference app.</li>
-        </ul>
-        <a href="https://github.com/Falli007/CHEST_APP" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 8. Heart Attack Prediction -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/health-ai.svg') }}" alt="Health AI illustration">
-        <span class="category-tag">Health AI</span>
-        <h2>Heart Attack Prediction</h2>
-        <p>
-          Machine learning models predicting the likelihood of heart attacks from clinical and
-          laboratory data, helping flag high-risk patients for early intervention.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, Pandas, scikit-learn, Jupyter, Streamlit</li>
-          <li><strong>Focus:</strong> Classification (Random Forest, Logistic Regression), ROC/AUC evaluation</li>
-          <li><strong>Outcome:</strong> Identified high-risk patients with significant accuracy, supporting early detection.</li>
-        </ul>
-        <a href="https://github.com/Falli007/Heart-Attack" target="_blank" class="btn">View on GitHub</a>
       </article>
 
     </div>

@@ -270,7 +270,8 @@ a {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
   display: block;
   border-bottom: 1px solid var(--border);
 }
