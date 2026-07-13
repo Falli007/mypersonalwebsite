@@ -7,202 +7,179 @@
 </head>
 <body>
 
-
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
       <a href="/" class="logo">Fredrick Alli</a>
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/projects">Projects</a></li>
+        <li><a href="/projects" class="active">Projects</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/resume">Resume</a></li>
       </ul>
     </div>
   </nav>
-  
 
   <!-- Hero / Banner Section -->
   <header class="hero-section">
     <div class="container hero-content">
       <h1>My Projects</h1>
+      <p>AI/GenAI, data science, and data engineering projects I've worked on.</p>
     </div>
-    <img src="{{ url_for('static', filename='images/Fredrick_Alli_photo.jpeg') }}" alt="Fredrick Alli" class="profile-picture">  
   </header>
 
   <!--Projects Section -->
-
   <section class="projects-section">
-    <div class="container" style="margin-top: 2rem;">
+    <div class="container">
 
-    <p>
-      Below are some of the data analysis, machine learning, and Power BI projects I've worked on.
-    </p>
-    
-    <!-- 1. Cryptocurrency Prediction -->
-    <section style="margin-bottom: 2rem;">
-      <h2>Cryptocurrency Prediction</h2>
-      <p>
-        Developed a predictive model to forecast cryptocurrency price trends using historical data, 
-        advanced machine learning algorithms, and time-series analysis.
-      </p>
-      <ul>
-        <li><strong>Tech Stack:</strong> Python, Pandas, NumPy, scikit-learn, RaandomForestRegressor, Flask</li>
-        <li><strong>Focus:</strong> Price forecasting, feature engineering, model evaluation</li>
-        <li><strong>Outcome:</strong> Improved forecasting accuracy by applying Random forest Regressor model and 
-            built the application using flask.</li>
-      </ul>
-      <!-- GitHub Link -->
-      <p>
-        <a href="https://github.com/FAlli007/mycurrentcryptomarket/blob/main/stock.ipynb" 
-           target="_blank" class="btn">
-          View on GitHub
-        </a>
-      </p>
-      <!-- To Add a screenshot or placeholder image -->
-      <img src="{{ url_for('static', filename='images/Cryptocurrency_image.jpeg') }}" alt="Cryptocurrency Prediction" width="500">
-      
-    </section>
+      <!-- 1. Building Agents -->
+      <article class="project-detail">
+        <span class="category-tag">AI Engineering</span>
+        <h2>Building Agents Portfolio</h2>
+        <p>
+          Production-oriented multi-agent AI systems across regulated domains: insurance
+          claims triage &amp; SEC filing research, healthcare prior-auth extraction &amp;
+          CDC BRFSS research, and fintech AML alert scoring &amp; CFPB complaint research.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, FastAPI, LLM Agents, Docker, CI/CD</li>
+          <li><strong>Focus:</strong> Multi-agent orchestration combining LLM reasoning with deterministic fallback logic and external data tools</li>
+          <li><strong>Outcome:</strong> Three domain-specific agent systems built with production-style engineering gates (CI, containerisation, HTTP APIs).</li>
+        </ul>
+        <a href="https://github.com/Falli007/Building-Agents" target="_blank" class="btn">View on GitHub</a>
+      </article>
 
-    <!-- 2. Book Genre Classification -->
-    <section style="margin-bottom: 2rem;">
-      <h2>Book Genre Classification</h2>
-      <p>
-        Built a text classification model to automatically label books by genre based on their 
-        descriptions and metadata, using NLP techniques.
-      </p>
-      <ul>
-        <li><strong>Tech Stack:</strong> Python, scikit-learn, NLP libraries (NLTK/spacy), Pandas, Flask</li>
-        <li><strong>Focus:</strong> Text preprocessing, vectorization (CountVectorizer, TF-IDF), 
-            classification algorithms</li>
-        <li><strong>Outcome:</strong> Achieved high accuracy in predicting genres, demonstrating 
-            the model’s potential for automated categorisation.</li>
-      </ul>
-      <p>
-        <a href="https://github.com/FAlli007/SentimentAnalysis/blob/main/Book_Genre_Classification.ipynb" 
-           target="_blank" class="btn">
-          View on GitHub
-        </a>
-      </p>
-      <!-- To Add a screenshot or placeholder image -->
-      <img src="{{ url_for('static', filename='images/Book_Genre_image.jpeg') }}" alt="Book Genre Classification" width="500">
-      
-    </section>
+      <!-- 2. WHO RAG Service -->
+      <article class="project-detail">
+        <span class="category-tag">GenAI / RAG</span>
+        <h2>WHO RAG Service</h2>
+        <p>
+          A microservice for querying WHO guideline documents using Retrieval-Augmented
+          Generation: PDF ingestion, SBERT embeddings, vector indexing, and semantic
+          summarisation via an HTTP API.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, FastAPI, FAISS, Pinecone, SBERT</li>
+          <li><strong>Focus:</strong> Document ingestion &amp; chunking, embedding generation, vector search, and RAG-based summarisation</li>
+          <li><strong>Outcome:</strong> Shipped an /ask endpoint for semantic search and summarisation over WHO guidelines, with pytest coverage.</li>
+        </ul>
+        <a href="https://github.com/Falli007/WHO-RAG-Recommendation" target="_blank" class="btn">View on GitHub</a>
+      </article>
 
-    <!-- 3. Heart Attack Prediction -->
-    <section style="margin-bottom: 2rem;">
-      <h2>Heart Attack Prediction</h2>
-      <p>
-        Leveraged machine learning algorithms to predict the likelihood of heart attacks based on 
-        clinical and laboratory data, improving early detection and healthcare outcomes.
-      </p>
-      <ul>
-        <li><strong>Tech Stack:</strong> Python (Pandas, NumPy, scikit-learn), Jupyter Notebook, Streamlit</li>
-        <li><strong>Focus:</strong> Classification (Random Forest, Logistic Regression), 
-            model evaluation (ROC, AUC)</li>
-        <li><strong>Outcome:</strong> Provided actionable insights for healthcare professionals 
-            by identifying high-risk patients with significant accuracy.</li>
-      </ul>
-      <p>
-        <a href="https://github.com/FAlli007/Heart-Attack/blob/main/main.py" 
-           target="_blank" class="btn">
-          View on GitHub
-        </a>
-      </p>
-      <!-- To Add a screenshot or placeholder image -->
-      <img src="{{ url_for('static', filename='images/Heart_attack_image.jpeg') }}" alt="Heart Attack Prediction" width="500">
-      
-    </section>
+      <!-- 3. OncoBot -->
+      <article class="project-detail">
+        <span class="category-tag">GenAI / RAG</span>
+        <h2>OncoBot: Lung-Cancer RAG Assistant</h2>
+        <p>
+          A Retrieval-Augmented-Generation assistant that answers questions about early
+          lung-cancer detection using published research papers.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, FAISS, Sentence-Transformers, Flan-T5, FastAPI, Streamlit</li>
+          <li><strong>Focus:</strong> Nearest-neighbour document retrieval, embedding-based search, and prompt-driven answer generation</li>
+          <li><strong>Outcome:</strong> Delivered a working API and lightweight web UI for querying lung-cancer research literature.</li>
+        </ul>
+        <a href="https://github.com/Falli007/Oncobot" target="_blank" class="btn">View on GitHub</a>
+      </article>
 
-    <!-- 4. Netflix Recommendation System -->
-    <section style="margin-bottom: 2rem;">
-      <h2>Netflix Recommendation System</h2>
-      <p>
-        Created a content-based filtering system to suggest movies and TV shows based on user preferences 
-        and metadata similarity, enhancing the user experience.
-      </p>
-      <ul>
-        <li><strong>Tech Stack:</strong> Python, Pandas, scikit-learn, CountVectorizer</li>
-        <li><strong>Focus:</strong> Cosine similarity, content-based filtering, feature extraction</li>
-        <li><strong>Outcome:</strong> Delivered relevant recommendations by analysing plot overviews, 
-            genres, and user ratings.</li>
-      </ul>
-      <p>
-        <a href="https://github.com/FAlli007/Recommendation_system/blob/main/Netflix.ipynb" 
-           target="_blank" class="btn">
-          View on GitHub
-        </a>
-      </p>
-      <!-- To Add a screenshot or placeholder image -->
-      <img src="{{ url_for('static', filename='images/Netflix_image.jpeg') }}" alt=" Netflix Recommendation System " width="500">
-    </section>
+      <!-- 4. Clinical NLP Pipeline -->
+      <article class="project-detail">
+        <span class="category-tag">Data Science / NLP</span>
+        <h2>Clinical NLP Pipeline</h2>
+        <p>
+          A production-grade clinical NLP pipeline covering classification, NER, RAG, and
+          evaluation across 614K+ samples, running entirely on local HuggingFace models for
+          regulated healthcare environments.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, BiomedBERT, BioBERT, Flan-T5, FAISS, Django</li>
+          <li><strong>Focus:</strong> Medical Q&amp;A classification, MedMCQA multiclass classification, NER, and a 417K-vector RAG pipeline</li>
+          <li><strong>Outcome:</strong> Built 8 notebooks and a Django web app spanning 5 distinct NLP tasks with no external API dependency.</li>
+        </ul>
+        <a href="https://github.com/Falli007/-clinical-nlp-pipeline" target="_blank" class="btn">View on GitHub</a>
+      </article>
 
-    <!-- 5. Total Call Centre Cases Forecast (SARIMA & Prophet) -->
-    <section style="margin-bottom: 2rem;">
-      <h2>Total Call Centre Cases Forecast</h2>
-      <p>
-        Implemented SARIMA and Prophet models to predict call volumes for a call centre, enabling 
-        resource optimisation and improved staffing.
-      </p>
-      <ul>
-        <li><strong>Tech Stack:</strong> Python, Pandas, NumPy, statsmodels, Prophet, SARIMA</li>
-        <li><strong>Focus:</strong> Time-series forecasting, model selection (SARIMA vs. Prophet), 
-            hyperparameter tuning</li>
-        <li><strong>Outcome:</strong> Increased forecasting accuracy and allowed management to 
-            reduce wait times by better scheduling staff.</li>
-      </ul>
-      <p>
-        <a href="https://github.com/FAlli007/Forecasting-SARIMA-and-Prophet/blob/main/Total%20Call%20Centre%20Forecast%20Using%20SARIMA%20Ending%20of%20Jan-Feb%202024.ipynb" 
-           target="_blank" class="btn">
-          View on GitHub
-        </a>
-      </p>
-      <!-- To Add a screenshot or placeholder image -->
-       <img src="{{ url_for('static', filename='images/call_centre_image.jpeg') }}" alt=" Total Call Centre Cases Forecast" width="500">
-    </section>
+      <!-- 5. Brain Tumor MRI Classifier -->
+      <article class="project-detail">
+        <span class="category-tag">Computer Vision</span>
+        <h2>Brain Tumor MRI Classifier</h2>
+        <p>
+          A 4-class brain tumor MRI classifier (glioma, meningioma, pituitary, no tumor)
+          trained in Colab and packaged for local CPU inference.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, TensorFlow/Keras, EfficientNetB0, Streamlit</li>
+          <li><strong>Focus:</strong> Transfer learning on 256x256 MRI scans, model packaging, and CPU-only inference</li>
+          <li><strong>Outcome:</strong> Achieved ~97.8% held-out test accuracy, shipped with both a CLI and a Streamlit inference app.</li>
+        </ul>
+        <a href="https://github.com/Falli007/brain-mri-tumor-detection" target="_blank" class="btn">View on GitHub</a>
+      </article>
 
-    <!-- 6. Credit Card Fraud Detection -->
-    <section style="margin-bottom: 2rem;">
-    <h2>Credit Card Fraud Detection</h2>
-    <p>
-      Developed a classification model to detect fraudulent credit card transactions. 
-      Utilised advanced machine learning techniques and model comparison to accurately 
-      identify suspicious activity and reduce financial losses.
-    </p>
-    <ul>
-      <li><strong>Tech Stack:</strong> Python, scikit-learn, PyCaret, Flask</li>
-      <li><strong>Focus:</strong> Classification metrics, model comparison (e.g., 
-          Ensemble methods, Random Forest, LightGBM), feature engineering</li>
-      <li><strong>Outcome:</strong> Achieved high accuracy in identifying fraudulent 
-          transactions, significantly reducing false positives and enhancing financial security.</li>
-    </ul>
-    <p>
-      <a 
-        href="https://github.com/FAlli007/CreditCardFraudDetection/blob/main/Credit_Card_Fraud_Detection.ipynb" 
-        target="_blank" 
-        class="btn"
-      >
-        View on GitHub
-      </a>
-    </p>
-    <!-- To Add a screenshot or placeholder image -->
-    <img src="{{ url_for('static', filename='images/credit_card.jpeg') }}" alt=" Total Call Centre Cases Forecast" width="500">
-  </div>
+      <!-- 6. BBC News NLP Platform -->
+      <article class="project-detail">
+        <span class="category-tag">Data Science / NLP</span>
+        <h2>BBC News NLP Intelligence Platform</h2>
+        <p>
+          A local-only NLP platform for the BBC News archive: dataset auditing, a
+          fine-tuned ModernBERT classifier, entity recognition, sub-topic classification,
+          semantic search, a FastAPI backend, and a Django UI.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, ModernBERT, GLiNER, FastAPI, Django</li>
+          <li><strong>Focus:</strong> Dataset validation, text classification fine-tuning, NER, and semantic search &mdash; all running locally</li>
+          <li><strong>Outcome:</strong> Delivered a full-stack NLP platform with no hosted inference or API key dependency.</li>
+        </ul>
+        <a href="https://github.com/Falli007/BBC-Subclassification-NLP" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 7. Insurance Data Engineering -->
+      <article class="project-detail">
+        <span class="category-tag">Data Engineering</span>
+        <h2>Insurance Data Engineering Pipeline</h2>
+        <p>
+          A medallion-architecture data pipeline for insurance data: bronze ingestion,
+          silver dimensional modelling (dim/fact tables), and gold-layer business metrics
+          (claims trends, policy profitability, customer lifetime value).
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Python, REST API, Dimensional Modelling</li>
+          <li><strong>Focus:</strong> Bronze/silver/gold layering, dimensional modelling, and business-metric aggregation</li>
+          <li><strong>Outcome:</strong> Produced ready-to-consume gold tables for claims trends, regional performance, and profitability analysis.</li>
+        </ul>
+        <a href="https://github.com/Falli007/Insurance-Data-Engineer-RestAPI-Prpject" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+      <!-- 8. E-Commerce Lakehouse on Microsoft Fabric -->
+      <article class="project-detail">
+        <span class="category-tag">Data Engineering</span>
+        <h2>E-Commerce Lakehouse on Microsoft Fabric</h2>
+        <p>
+          An e-commerce lakehouse pipeline built on Microsoft Fabric OneLake: bronze
+          ingestion from Parquet into Delta tables, followed by silver-layer cleansing and
+          typing with Spark SQL.
+        </p>
+        <ul>
+          <li><strong>Tech Stack:</strong> PySpark, Microsoft Fabric, Delta Lake, Spark SQL</li>
+          <li><strong>Focus:</strong> Bronze-to-silver transformation for orders, customers, products, and order items</li>
+          <li><strong>Outcome:</strong> Built a working medallion pipeline on Fabric OneLake using PySpark and Delta Lake.</li>
+        </ul>
+        <a href="https://github.com/Falli007/ecommerce-using-microsoft-fabric" target="_blank" class="btn">View on GitHub</a>
+      </article>
+
+    </div>
   </section>
-  
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2025 FA Grace Consulting Ltd. All Rights Reserved</p>
+      <p>&copy; 2026 FA Grace Consulting Ltd. All Rights Reserved</p>
       <ul class="social-links">
         <li><a href="https://www.linkedin.com/in/fredrick-alli-ab8192206/" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/Falli007" target="_blank">GitHub</a></li>
       </ul>
     </div>
   </footer>
-
 
 </body>
 </html>

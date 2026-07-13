@@ -1,7 +1,10 @@
+import os
+
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
-app.secret_key = "JesusLovesMe1996#"  # Replace with a real secret
+app.secret_key = os.environ["SESSION_SECRET"]
+RESUME_PASSWORD = os.environ["RESUME_PASSWORD"]
 
 @app.route('/')
 def home():
@@ -10,8 +13,7 @@ def home():
 @app.route('/resume-login', methods=['GET', 'POST'])
 def resume_login():
     if request.method == 'POST':
-        # Check if password is correct
-        if request.form['password'] == 'Fredzi1996#':
+        if request.form['password'] == RESUME_PASSWORD:
             session['resume_authorized'] = True
             return redirect(url_for('resume'))
         else:
@@ -20,7 +22,6 @@ def resume_login():
 
 @app.route('/resume')
 def resume():
-    # Check if the user is authorized
     if not session.get('resume_authorized'):
         return redirect(url_for('resume_login'))
     return render_template('resume.html')
@@ -36,6 +37,12 @@ def projects():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    # No email provider is configured yet - log the enquiry server-side for now.
+    print('New contact form submission:', dict(request.form))
+    return redirect(url_for('contact'))
 
 if __name__ == '__main__':
     app.run(debug=True)
