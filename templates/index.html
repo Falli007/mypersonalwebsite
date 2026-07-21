@@ -77,7 +77,7 @@
   <section class="projects-section">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>A cross-section of recent work: full-stack apps, regulatory risk modelling, multi-agent AI systems, and GenAI/RAG.</p>
+      <p>A cross-section of recent work: full-stack apps, regulatory risk modelling, multi-agent AI systems, NLP, GenAI/RAG, and health AI.</p>
 
       <div class="projects-grid">
         <div class="project-card">
@@ -123,6 +123,7 @@
         </div>
 
         <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/building-agents-api.png') }}" alt="Insurance AI Service Swagger API docs from the Building Agents portfolio">
           <span class="category-tag">AI Engineering</span>
           <h3>Building Agents Portfolio</h3>
           <p>
@@ -131,6 +132,34 @@
             containerisation, and HTTP APIs for each domain.
           </p>
           <a href="https://github.com/Falli007/Building-Agents" class="btn" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/bbc-nlp-platform.png') }}" alt="BBC News NLP Intelligence Platform showing classification, entity extraction, and similar-article results">
+          <span class="category-tag">NLP</span>
+          <h3>BBC News NLP Intelligence Platform</h3>
+          <p>
+            A fully local NLP platform for the BBC News archive: fine-tuned topic classification,
+            zero-shot sub-topic tagging, named entity recognition, and semantic search, served
+            through an API and web interface with no external calls.
+          </p>
+          <a href="https://github.com/Falli007/BBC-Subclassification-NLP" class="btn" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/projects/brain-mri-classifier.png') }}" alt="Brain Tumor MRI Classifier Streamlit app showing a 100% meningioma prediction">
+          <span class="category-tag">Health AI</span>
+          <h3>Brain Tumor MRI Classifier</h3>
+          <p>
+            A 4-class brain tumor MRI classifier (glioma, meningioma, pituitary, no tumor)
+            achieving ~97.8% held-out test accuracy, shipped with both a CLI and a Streamlit
+            inference app.
+          </p>
+          <a href="https://github.com/Falli007/brain-mri-tumor-detection" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
