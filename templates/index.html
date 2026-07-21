@@ -77,19 +77,19 @@
   <section class="projects-section">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>A cross-section of recent work: a full-stack booking platform, regulatory risk modelling, and GenAI/RAG systems.</p>
+      <p>A cross-section of recent work: full-stack apps, regulatory risk modelling, multi-agent AI systems, and GenAI/RAG.</p>
 
       <div class="projects-grid">
         <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/cuisine-table.png') }}" alt="Cuisine Table restaurant booking platform home page">
+          <img src="{{ url_for('static', filename='images/projects/movie-recommendation.png') }}" alt="Movie Recommender home page with genre browsing and AI assistant">
           <span class="category-tag">Full-Stack App</span>
-          <h3>Cuisine Table</h3>
+          <h3>Movie Recommender &amp; AI Assistant</h3>
           <p>
-            A full-stack restaurant booking marketplace: customers browse restaurants across
-            four cuisines, reserve tables, and pre-order menu items, while a platform admin
-            manages every restaurant's profile, menu, and bookings from a dedicated dashboard.
+            A full-stack Flask recommendation platform running entirely offline: collaborative-filtering
+            recommendations, genre browsing, similarity search, and a conversational movie assistant
+            powered by a locally-running LLM.
           </p>
-          <a href="https://github.com/Falli007/restaurantbookingapps" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/Movie-Recommendation" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
@@ -123,15 +123,14 @@
         </div>
 
         <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/claimtrackr.png') }}" alt="ClaimTrackr insurance claims processing interface">
-          <span class="category-tag">GenAI / RAG</span>
-          <h3>ClaimTrackr</h3>
+          <span class="category-tag">AI Engineering</span>
+          <h3>Building Agents Portfolio</h3>
           <p>
-            An AI-powered insurance claims processing assistant that automates the claims
-            lifecycle: document parsing, embedding-based policy matching, real-time eligibility
-            validation, and an AI chatbot for policy handbook lookup.
+            Production-oriented multi-agent AI systems across insurance, healthcare, and
+            fintech: LLM reasoning combined with deterministic fallback logic, CI gates,
+            containerisation, and HTTP APIs for each domain.
           </p>
-          <a href="https://github.com/Falli007/GenAI-Insurance" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/Building-Agents" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
