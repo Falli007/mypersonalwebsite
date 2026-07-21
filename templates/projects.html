@@ -33,24 +33,23 @@
   <section class="projects-section">
     <div class="container">
 
-      <!-- 1. Cuisine Table -->
+      <!-- 1. Movie Recommendation -->
       <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/cuisine-table.png') }}" alt="Cuisine Table restaurant booking platform home page">
+        <img src="{{ url_for('static', filename='images/projects/movie-recommendation.png') }}" alt="Movie Recommender home page with genre browsing and AI assistant">
         <span class="category-tag">Full-Stack App</span>
-        <h2>Cuisine Table</h2>
+        <h2>Movie Recommender &amp; AI Assistant</h2>
         <p>
-          A full-stack restaurant booking marketplace built for a client who wanted to bring
-          several partner restaurants onto a single reservation platform: customers browse
-          restaurants across four cuisines, reserve a table, pre-order menu items, and pay a
-          deposit online. A single platform admin manages every restaurant's profile, menu,
-          tables, and bookings from a dedicated dashboard.
+          A full-stack Flask recommendation platform that runs entirely offline: personalized
+          collaborative-filtering recommendations, genre browsing, similarity search, and a
+          conversational movie assistant powered by a locally-running LLM, all with zero cloud
+          API costs.
         </p>
         <ul>
-          <li><strong>Tech Stack:</strong> TypeScript, React, Node.js</li>
-          <li><strong>Focus:</strong> Multi-tenant booking flow, menu pre-ordering, deposit payments, and an admin dashboard</li>
-          <li><strong>Outcome:</strong> A working marketplace covering the full customer booking journey and platform-admin management.</li>
+          <li><strong>Tech Stack:</strong> Python, Flask, Surprise (SVD), Ollama (local LLM), Bootstrap</li>
+          <li><strong>Focus:</strong> Collaborative filtering, genre/similarity-based discovery, and a privacy-first local LLM chat assistant</li>
+          <li><strong>Outcome:</strong> A fully offline recommender web app with three complementary discovery modes plus an AI chat interface.</li>
         </ul>
-        <a href="https://github.com/Falli007/restaurantbookingapps" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Falli007/Movie-Recommendation" target="_blank" class="btn">View on GitHub</a>
       </article>
 
       <!-- 2. Risk & Advanced Modelling -->
@@ -90,22 +89,22 @@
         <a href="https://github.com/Falli007/TimeSeriesForecasting" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 4. Fintech NLP Pipeline -->
+      <!-- 4. BBC News NLP Intelligence Platform -->
       <article class="project-detail">
         <span class="category-tag">NLP</span>
-        <h2>Fintech NLP Pipeline</h2>
+        <h2>BBC News NLP Intelligence Platform</h2>
         <p>
-          A comprehensive NLP pipeline for the financial domain, covering binary sentiment
-          classification, multi-class topic classification, named entity recognition,
-          sub-classification, and retrieval-augmented generation, all tailored to fintech text
-          data.
+          A fully local NLP platform for the BBC News archive: dataset auditing, fine-tuned
+          topic classification, zero-shot sub-topic tagging, named entity recognition, and
+          semantic search, served through both an API and a web interface with no external
+          API calls.
         </p>
         <ul>
-          <li><strong>Tech Stack:</strong> Python, HuggingFace Transformers</li>
-          <li><strong>Focus:</strong> Sentiment and topic classification, NER, and RAG over financial text</li>
-          <li><strong>Outcome:</strong> A single pipeline spanning 5 distinct NLP tasks tailored specifically to fintech data.</li>
+          <li><strong>Tech Stack:</strong> Python, ModernBERT, GLiNER, Jina Embeddings, FastAPI, Django, Docker, MLflow</li>
+          <li><strong>Focus:</strong> Fine-tuned transformer classification, zero-shot sub-topic assignment, entity extraction, and a local semantic search index</li>
+          <li><strong>Outcome:</strong> 89.84% classification accuracy at ~154ms latency, backed by unit/integration/evaluation tests, Dockerized deployment, and MLflow experiment tracking.</li>
         </ul>
-        <a href="https://github.com/Falli007/fintech-nlp-pipeline-" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Falli007/BBC-Subclassification-NLP" target="_blank" class="btn">View on GitHub</a>
       </article>
 
       <!-- 5. Building Agents -->
@@ -160,39 +159,38 @@
         <a href="https://github.com/Falli007/genai-pdf-rag-chatbot" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 6c. ClaimTrackr -->
+      <!-- 6c. MedBot -->
       <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/claimtrackr.png') }}" alt="ClaimTrackr insurance claims processing interface">
-        <span class="category-tag">GenAI / RAG</span>
-        <h2>ClaimTrackr</h2>
+        <span class="category-tag">Health AI / Agents</span>
+        <h2>MedBot &mdash; Symptom Triage Assistant</h2>
         <p>
-          An AI-powered insurance claims processing assistant that automates the claims
-          lifecycle end to end, from document parsing and embedding-based policy matching to
-          real-time eligibility validation and an AI chatbot for policy handbook lookup.
+          A medical symptom-triage assistant that layers a rule engine, an ML classifier, and
+          an LLM fallback to assess urgency and provide contextual guidance, with SHAP-based
+          explainability dashboards so every decision stays auditable.
         </p>
         <ul>
-          <li><strong>Tech Stack:</strong> Python, OpenAI Embeddings, LLM Reasoning, Flask</li>
-          <li><strong>Focus:</strong> Document parsing, semantic embedding-based policy matching, and real-time claim validation</li>
-          <li><strong>Outcome:</strong> An end-to-end claims pipeline that replaces manual document review with AI-driven validation.</li>
+          <li><strong>Tech Stack:</strong> Python, FastAPI, scikit-learn, spaCy, HuggingFace Transformers, SHAP, Docker</li>
+          <li><strong>Focus:</strong> NLP symptom extraction, rule-based risk flags, ML severity classification, and transparent LLM-backed guidance</li>
+          <li><strong>Outcome:</strong> A CI-tested, Dockerized triage API (pytest + GitHub Actions) with SHAP explainability and OpenAPI docs, released under MIT license.</li>
         </ul>
-        <a href="https://github.com/Falli007/GenAI-Insurance" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Falli007/medbot" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 7. Clinical NLP Pipeline -->
+      <!-- 7. Biotech & Life Sciences NLP Pipeline -->
       <article class="project-detail">
         <span class="category-tag">NLP</span>
-        <h2>Clinical NLP Pipeline</h2>
+        <h2>Biotech &amp; Life Sciences NLP Pipeline</h2>
         <p>
-          A production-grade clinical NLP pipeline covering classification, NER, RAG, and
-          evaluation across 614K+ samples, running entirely on local HuggingFace models for
-          regulated healthcare environments.
+          A production-grade biomedical NLP pipeline spanning binary classification, multiclass
+          classification, named entity recognition, hierarchical sub-classification, and
+          retrieval-augmented generation, trained on PubMedQA, MedMCQA, BC2GM, and MedQA-USMLE.
         </p>
         <ul>
-          <li><strong>Tech Stack:</strong> Python, BiomedBERT, BioBERT, Flan-T5, FAISS, Django</li>
-          <li><strong>Focus:</strong> Medical Q&amp;A classification, MedMCQA multiclass classification, NER, and a 417K-vector RAG pipeline</li>
-          <li><strong>Outcome:</strong> Built 8 notebooks and a Django web app spanning 5 distinct NLP tasks with no external API dependency.</li>
+          <li><strong>Tech Stack:</strong> Python, BiomedBERT, BioBERT, Flan-T5, Sentence-Transformers, FAISS, Django, Docker</li>
+          <li><strong>Focus:</strong> Five distinct biomedical NLP tasks unified behind a single CLI and Django web app, evaluated with F1, ROUGE-L, BERTScore, and NLI faithfulness scoring</li>
+          <li><strong>Outcome:</strong> 7 notebooks and a full test suite (GitHub Actions CI, multi-stage GPU-ready Docker build) covering ~200K+ biomedical samples end to end.</li>
         </ul>
-        <a href="https://github.com/Falli007/-clinical-nlp-pipeline" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Falli007/biotech-nlp-pipeline-" target="_blank" class="btn">View on GitHub</a>
       </article>
 
       <!-- 8. Brain Tumor MRI Classifier -->
