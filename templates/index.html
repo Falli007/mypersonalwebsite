@@ -77,23 +77,9 @@
   <section class="projects-section">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>A cross-section of recent work: full-stack apps, regulatory risk modelling, multi-agent AI systems, NLP, GenAI/RAG, and health AI.</p>
+      <p>My top 6 projects: risk analytics, forecasting, multi-agent AI, NLP, and GenAI/RAG systems.</p>
 
       <div class="projects-grid">
-        <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/movie-recommendation.png') }}" alt="Movie Recommender home page with genre browsing and AI assistant">
-          <span class="category-tag">Full-Stack App</span>
-          <h3>Movie Recommender &amp; AI Assistant</h3>
-          <p>
-            A full-stack Flask recommendation platform running entirely offline: collaborative-filtering
-            recommendations, genre browsing, similarity search, and a conversational movie assistant
-            powered by a locally-running LLM.
-          </p>
-          <a href="https://github.com/Falli007/Movie-Recommendation" class="btn" target="_blank" rel="noopener">
-            View on GitHub
-          </a>
-        </div>
-
         <div class="project-card">
           <img src="{{ url_for('static', filename='images/projects/risk-modelling.png') }}" alt="Risk and Advanced Modelling pharmacovigilance dashboard">
           <span class="category-tag">Risk Analytics</span>
@@ -109,15 +95,14 @@
         </div>
 
         <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/pdf-rag-chatbot.png') }}" alt="Multi-PDF RAG Chatbot interface">
-          <span class="category-tag">GenAI / RAG</span>
-          <h3>Multi-PDF RAG Chatbot</h3>
+          <span class="category-tag">Forecasting</span>
+          <h3>Retail Demand Forecasting</h3>
           <p>
-            A Retrieval-Augmented Generation chatbot for holding natural language conversations
-            with multiple PDF documents, with the FAISS index refreshing automatically as new
-            documents are added.
+            A production-grade demand forecasting system for Tesco-scale retail operations:
+            LSTM/GRU, TCN, Transformer, N-BEATS, and DeepAR models with hierarchical
+            reconciliation across 50 stores and 200 products.
           </p>
-          <a href="https://github.com/Falli007/genai-pdf-rag-chatbot" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/TimeSeriesForecasting" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
@@ -151,15 +136,26 @@
         </div>
 
         <div class="project-card">
-          <img src="{{ url_for('static', filename='images/projects/brain-mri-classifier.png') }}" alt="Brain Tumor MRI Classifier Streamlit app showing a 100% meningioma prediction">
-          <span class="category-tag">Health AI</span>
-          <h3>Brain Tumor MRI Classifier</h3>
+          <span class="category-tag">GenAI / RAG</span>
+          <h3>WHO RAG Service</h3>
           <p>
-            A 4-class brain tumor MRI classifier (glioma, meningioma, pituitary, no tumor)
-            achieving ~97.8% held-out test accuracy, shipped with both a CLI and a Streamlit
-            inference app.
+            A microservice for querying WHO guideline documents using Retrieval-Augmented
+            Generation: PDF ingestion, SBERT embeddings, vector indexing, and semantic
+            summarisation, with pytest coverage.
           </p>
-          <a href="https://github.com/Falli007/brain-mri-tumor-detection" class="btn" target="_blank" rel="noopener">
+          <a href="https://github.com/Falli007/WHO-RAG-Recommendation" class="btn" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <span class="category-tag">Health AI / Agents</span>
+          <h3>MedBot &mdash; Symptom Triage Assistant</h3>
+          <p>
+            A medical symptom-triage assistant layering a rule engine, an ML classifier, and an
+            LLM fallback, with SHAP-based explainability, CI, Docker, and OpenAPI docs.
+          </p>
+          <a href="https://github.com/Falli007/medbot" class="btn" target="_blank" rel="noopener">
             View on GitHub
           </a>
         </div>
