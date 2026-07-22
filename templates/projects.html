@@ -25,7 +25,7 @@
   <header class="hero-section">
     <div class="container hero-content">
       <h1>My Projects</h1>
-      <p>Full-stack apps, risk analytics, forecasting, and AI/ML projects I've built.</p>
+      <p>My top 6 projects: risk analytics, forecasting, multi-agent AI, NLP, and GenAI/RAG systems.</p>
     </div>
   </header>
 
@@ -33,26 +33,7 @@
   <section class="projects-section">
     <div class="container">
 
-      <!-- 1. Movie Recommendation -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/movie-recommendation.png') }}" alt="Movie Recommender home page with genre browsing and AI assistant">
-        <span class="category-tag">Full-Stack App</span>
-        <h2>Movie Recommender &amp; AI Assistant</h2>
-        <p>
-          A full-stack Flask recommendation platform that runs entirely offline: personalized
-          collaborative-filtering recommendations, genre browsing, similarity search, and a
-          conversational movie assistant powered by a locally-running LLM, all with zero cloud
-          API costs.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, Flask, Surprise (SVD), Ollama (local LLM), Bootstrap</li>
-          <li><strong>Focus:</strong> Collaborative filtering, genre/similarity-based discovery, and a privacy-first local LLM chat assistant</li>
-          <li><strong>Outcome:</strong> A fully offline recommender web app with three complementary discovery modes plus an AI chat interface.</li>
-        </ul>
-        <a href="https://github.com/Falli007/Movie-Recommendation" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 2. Risk & Advanced Modelling -->
+      <!-- 1. Risk & Advanced Modelling -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/risk-modelling.png') }}" alt="Risk and Advanced Modelling pharmacovigilance dashboard">
         <span class="category-tag">Risk Analytics</span>
@@ -71,7 +52,7 @@
         <a href="https://github.com/Falli007/Risk-Advanced-Modelling" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 3. Retail Demand Forecasting -->
+      <!-- 2. Retail Demand Forecasting -->
       <article class="project-detail">
         <span class="category-tag">Forecasting</span>
         <h2>Retail Demand Forecasting</h2>
@@ -89,7 +70,7 @@
         <a href="https://github.com/Falli007/TimeSeriesForecasting" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 4. BBC News NLP Intelligence Platform -->
+      <!-- 3. BBC News NLP Intelligence Platform -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/bbc-nlp-platform.png') }}" alt="BBC News NLP Intelligence Platform showing classification, entity extraction, and similar-article results">
         <span class="category-tag">NLP</span>
@@ -108,7 +89,7 @@
         <a href="https://github.com/Falli007/BBC-Subclassification-NLP" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 5. Building Agents -->
+      <!-- 4. Building Agents -->
       <article class="project-detail">
         <img src="{{ url_for('static', filename='images/projects/building-agents-api.png') }}" alt="Insurance AI Service Swagger API docs from the Building Agents portfolio">
         <span class="category-tag">AI Engineering</span>
@@ -126,7 +107,7 @@
         <a href="https://github.com/Falli007/Building-Agents" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 6. WHO RAG Service -->
+      <!-- 5. WHO RAG Service -->
       <article class="project-detail">
         <span class="category-tag">GenAI / RAG</span>
         <h2>WHO RAG Service</h2>
@@ -143,25 +124,7 @@
         <a href="https://github.com/Falli007/WHO-RAG-Recommendation" target="_blank" class="btn">View on GitHub</a>
       </article>
 
-      <!-- 6b. Multi-PDF RAG Chatbot -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/pdf-rag-chatbot.png') }}" alt="Multi-PDF RAG Chatbot interface">
-        <span class="category-tag">GenAI / RAG</span>
-        <h2>Multi-PDF RAG Chatbot</h2>
-        <p>
-          A Retrieval-Augmented Generation chatbot that lets users hold natural language
-          conversations with multiple PDF documents at once, with the FAISS index refreshing
-          automatically whenever new or modified PDFs are added.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, LangChain, FAISS, Flask, OpenAI GPT-4</li>
-          <li><strong>Focus:</strong> Multi-document retrieval, automatic index refresh, and session-based conversation memory</li>
-          <li><strong>Outcome:</strong> A working multi-PDF chat interface with fast local vector search and GPT-4-powered answers.</li>
-        </ul>
-        <a href="https://github.com/Falli007/genai-pdf-rag-chatbot" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 6c. MedBot -->
+      <!-- 6. MedBot -->
       <article class="project-detail">
         <span class="category-tag">Health AI / Agents</span>
         <h2>MedBot &mdash; Symptom Triage Assistant</h2>
@@ -176,40 +139,6 @@
           <li><strong>Outcome:</strong> A CI-tested, Dockerized triage API (pytest + GitHub Actions) with SHAP explainability and OpenAPI docs, released under MIT license.</li>
         </ul>
         <a href="https://github.com/Falli007/medbot" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 7. Biotech & Life Sciences NLP Pipeline -->
-      <article class="project-detail">
-        <span class="category-tag">NLP</span>
-        <h2>Biotech &amp; Life Sciences NLP Pipeline</h2>
-        <p>
-          A production-grade biomedical NLP pipeline spanning binary classification, multiclass
-          classification, named entity recognition, hierarchical sub-classification, and
-          retrieval-augmented generation, trained on PubMedQA, MedMCQA, BC2GM, and MedQA-USMLE.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, BiomedBERT, BioBERT, Flan-T5, Sentence-Transformers, FAISS, Django, Docker</li>
-          <li><strong>Focus:</strong> Five distinct biomedical NLP tasks unified behind a single CLI and Django web app, evaluated with F1, ROUGE-L, BERTScore, and NLI faithfulness scoring</li>
-          <li><strong>Outcome:</strong> 7 notebooks and a full test suite (GitHub Actions CI, multi-stage GPU-ready Docker build) covering ~200K+ biomedical samples end to end.</li>
-        </ul>
-        <a href="https://github.com/Falli007/biotech-nlp-pipeline-" target="_blank" class="btn">View on GitHub</a>
-      </article>
-
-      <!-- 8. Brain Tumor MRI Classifier -->
-      <article class="project-detail">
-        <img src="{{ url_for('static', filename='images/projects/brain-mri-classifier.png') }}" alt="Brain Tumor MRI Classifier Streamlit app showing a 100% meningioma prediction">
-        <span class="category-tag">Health AI</span>
-        <h2>Brain Tumor MRI Classifier</h2>
-        <p>
-          A 4-class brain tumor MRI classifier (glioma, meningioma, pituitary, no tumor)
-          trained in Colab and packaged for local CPU inference.
-        </p>
-        <ul>
-          <li><strong>Tech Stack:</strong> Python, TensorFlow/Keras, EfficientNetB0, Streamlit</li>
-          <li><strong>Focus:</strong> Transfer learning on 256x256 MRI scans, model packaging, and CPU-only inference</li>
-          <li><strong>Outcome:</strong> Achieved ~97.8% held-out test accuracy, shipped with both a CLI and a Streamlit inference app.</li>
-        </ul>
-        <a href="https://github.com/Falli007/brain-mri-tumor-detection" target="_blank" class="btn">View on GitHub</a>
       </article>
 
     </div>
